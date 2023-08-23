@@ -1,0 +1,1626 @@
+2013-07-08  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 1.4.
+
+2013-07-08  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2013-07-08  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2013-07-08  Simon Josefsson <simon@josefsson.org>
+
+	* .gitignore: Ignore more.
+
+2013-07-08  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Fix for recent automake.
+
+2013-07-08  Simon Josefsson <simon@josefsson.org>
+
+	* gl/m4/extern-inline.m4, gl/m4/manywarnings.m4, gl/m4/stdalign.m4,
+	gl/m4/warnings.m4, gl/stdalign.in.h, gl/tests/verify.h: Update
+	gnulib files.
+
+2013-05-13  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS, NEWS: Update.
+
+2013-05-13  Simon Josefsson <simon@josefsson.org>
+
+	* .gitignore, GNUmakefile, build-aux/arg-nonnull.h,
+	build-aux/c++defs.h, build-aux/snippet/arg-nonnull.h,
+	build-aux/snippet/c++defs.h, build-aux/snippet/warn-on-use.h,
+	build-aux/useless-if-before-free, build-aux/vc-list-files,
+	build-aux/warn-on-use.h, gl/Makefile.am, gl/byteswap.in.h,
+	gl/check-version.c, gl/check-version.h, gl/des.c, gl/des.h,
+	gl/m4/00gnulib.m4, gl/m4/autobuild.m4, gl/m4/byteswap.m4,
+	gl/m4/extensions.m4, gl/m4/extern-inline.m4, gl/m4/gnulib-cache.m4,
+	gl/m4/gnulib-common.m4, gl/m4/gnulib-comp.m4, gl/m4/gnulib-tool.m4,
+	gl/m4/include_next.m4, gl/m4/inline.m4, gl/m4/inttypes-pri.m4,
+	gl/m4/inttypes.m4, gl/m4/longlong.m4, gl/m4/manywarnings.m4,
+	gl/m4/md4.m4, gl/m4/multiarch.m4, gl/m4/off_t.m4, gl/m4/ssize_t.m4,
+	gl/m4/stdalign.m4, gl/m4/stdbool.m4, gl/m4/stddef_h.m4,
+	gl/m4/stdint.m4, gl/m4/string_h.m4, gl/m4/strverscmp.m4,
+	gl/m4/sys_types_h.m4, gl/m4/unistd_h.m4, gl/m4/warn-on-use.m4,
+	gl/m4/warnings.m4, gl/m4/wchar_h.m4, gl/m4/wchar_t.m4,
+	gl/m4/wint_t.m4, gl/md4.c, gl/md4.h, gl/stdalign.in.h,
+	gl/stdbool.in.h, gl/stddef.in.h, gl/stdint.in.h, gl/string.in.h,
+	gl/strverscmp.c, gl/sys_types.in.h, gl/tests/Makefile.am,
+	gl/tests/dummy.c, gl/tests/init.sh, gl/tests/intprops.h,
+	gl/tests/inttypes.in.h, gl/tests/macros.h, gl/tests/signature.h,
+	gl/tests/test-byteswap.c, gl/tests/test-des.c,
+	gl/tests/test-init.sh, gl/tests/test-intprops.c,
+	gl/tests/test-inttypes.c, gl/tests/test-md4.c,
+	gl/tests/test-stdalign.c, gl/tests/test-stdbool.c,
+	gl/tests/test-stddef.c, gl/tests/test-stdint.c,
+	gl/tests/test-string.c, gl/tests/test-strverscmp.c,
+	gl/tests/test-sys_types.c, gl/tests/test-unistd.c,
+	gl/tests/test-vc-list-files-cvs.sh,
+	gl/tests/test-vc-list-files-git.sh, gl/tests/test-verify.c,
+	gl/tests/test-wchar.c, gl/tests/verify.h, gl/tests/wchar.in.h,
+	gl/unistd.c, gl/unistd.in.h, maint.mk: Update gnulib files.
+
+2013-05-13  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Dist cfg.mk and maint.mk.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* doc/announce.txt: Improve.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm4win.mk: Fix script.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm4win.mk: Add script to build Windows binaries.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* .gitignore: Add.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* doc/announce.txt: Add announce message.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 1.3.
+
+2011-06-20  Simon Josefsson <simon@josefsson.org>
+
+	* .x-sc_makefile_check, .x-sc_prohibit_HAVE_MBRTOWC,
+	.x-sc_prohibit_atoi_atof, .x-sc_prohibit_empty_lines_at_EOF,
+	.x-sc_require_config_h, .x-sc_require_config_h_first,
+	.x-sc_space_tab, COPYING, GNUmakefile, build-aux/arg-nonnull.h,
+	build-aux/c++defs.h, build-aux/useless-if-before-free,
+	build-aux/vc-list-files, build-aux/warn-on-use.h, cfg.mk,
+	gl/Makefile.am, gl/byteswap.in.h, gl/check-version.c,
+	gl/check-version.h, gl/des.c, gl/des.h, gl/dummy.c,
+	gl/m4/00gnulib.m4, gl/m4/autobuild.m4, gl/m4/byteswap.m4,
+	gl/m4/check-version.m4, gl/m4/des.m4, gl/m4/extensions.m4,
+	gl/m4/gnulib-cache.m4, gl/m4/gnulib-common.m4,
+	gl/m4/gnulib-comp.m4, gl/m4/gnulib-tool.m4, gl/m4/include_next.m4,
+	gl/m4/inline.m4, gl/m4/inttypes-pri.m4, gl/m4/inttypes.m4,
+	gl/m4/longlong.m4, gl/m4/manywarnings.m4, gl/m4/md4.m4,
+	gl/m4/multiarch.m4, gl/m4/stdbool.m4, gl/m4/stddef_h.m4,
+	gl/m4/stdint.m4, gl/m4/string_h.m4, gl/m4/strverscmp.m4,
+	gl/m4/unistd_h.m4, gl/m4/warn-on-use.m4, gl/m4/warnings.m4,
+	gl/m4/wchar_h.m4, gl/m4/wchar_t.m4, gl/m4/wint_t.m4, gl/md4.c,
+	gl/md4.h, gl/stdbool.in.h, gl/stddef.in.h, gl/stdint.in.h,
+	gl/string.in.h, gl/strverscmp.c, gl/tests/Makefile.am,
+	gl/tests/dummy.c, gl/tests/init.sh, gl/tests/intprops.h,
+	gl/tests/inttypes.in.h, gl/tests/macros.h, gl/tests/signature.h,
+	gl/tests/test-byteswap.c, gl/tests/test-des.c,
+	gl/tests/test-intprops.c, gl/tests/test-inttypes.c,
+	gl/tests/test-md4.c, gl/tests/test-stdbool.c,
+	gl/tests/test-stddef.c, gl/tests/test-stdint.c,
+	gl/tests/test-string.c, gl/tests/test-strverscmp.c,
+	gl/tests/test-unistd.c, gl/tests/test-vc-list-files-cvs.sh,
+	gl/tests/test-vc-list-files-git.sh, gl/tests/test-verify.c,
+	gl/tests/test-verify.sh, gl/tests/test-wchar.c, gl/tests/verify.h,
+	gl/tests/wchar.in.h, gl/unistd.in.h, gl/wchar.in.h, maint.mk: Update
+	gnulib files.  Fix syntax-check rules.
+
+2010-04-25  Simon Josefsson <simon@josefsson.org>
+
+	* build-aux/vc-list-files, gl/m4/gnulib-comp.m4,
+	gl/tests/Makefile.am, gl/tests/init.sh,
+	gl/tests/test-vc-list-files-cvs.sh,
+	gl/tests/test-vc-list-files-git.sh: Update gnulib files.
+
+2010-04-22  Simon Josefsson <simon@josefsson.org>
+
+	* m4/valgrind.m4: Use valgrind -q.
+
+2010-04-22  Simon Josefsson <simon@josefsson.org>
+
+	* gl/m4/gnulib-cache.m4~, gl/stdbool.in.h, gl/tests/test-stdbool.c,
+	gl/tests/test-stdint.c, maint.mk: Update gnulib files and fix new
+	syntax-check warnings.
+
+2010-04-14  Simon Josefsson <simon@josefsson.org>
+
+	* cfg.mk: Add review-diff target.
+
+2010-04-14  Simon Josefsson <simon@josefsson.org>
+
+	* .x-sc_prohibit_empty_lines_at_EOF, GNUmakefile,
+	build-aux/c++defs.h, build-aux/link-warning.h,
+	build-aux/vc-list-files, build-aux/warn-on-use.h, cfg.mk,
+	gl/Makefile.am, gl/m4/gnulib-common.m4, gl/m4/gnulib-comp.m4,
+	gl/m4/stddef_h.m4, gl/m4/string_h.m4, gl/m4/unistd_h.m4,
+	gl/m4/warn-on-use.m4, gl/m4/warnings.m4, gl/m4/wchar.m4,
+	gl/m4/wchar_h.m4, gl/stdint.in.h, gl/string.in.h,
+	gl/tests/Makefile.am, gl/tests/test-des.c, gl/tests/test-md4.c,
+	gl/tests/test-vc-list-files-git.sh, gl/unistd.in.h, gl/wchar.in.h,
+	maint.mk: Update gnulib files.  Fix new syntax-check warnings.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Fix e-mail address.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Add.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac: Fix paths.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* gl/Makefile.am, gl/m4/gnulib-cache.m4, gl/m4/gnulib-cache.m4~,
+	gl/m4/gnulib-comp.m4, gl/tests/Makefile.am, gl/tests/dummy.c,
+	gl/tests/intprops.h, gl/tests/macros.h, gl/tests/signature.h,
+	gl/tests/test-byteswap.c, gl/tests/test-des.c, gl/tests/test-md4.c,
+	gl/tests/test-stdbool.c, gl/tests/test-stddef.c,
+	gl/tests/test-stdint.c, gl/tests/test-string.c,
+	gl/tests/test-strverscmp.c, gl/tests/test-unistd.c,
+	gl/tests/test-vc-list-files-cvs.sh,
+	gl/tests/test-vc-list-files-git.sh, gl/tests/test-wchar.c,
+	gl/tests/verify.h, tests/Makefile.am, tests/dummy.c,
+	tests/intprops.h, tests/macros.h, tests/signature.h,
+	tests/test-byteswap.c, tests/test-des.c, tests/test-md4.c,
+	tests/test-stdbool.c, tests/test-stddef.c, tests/test-stdint.c,
+	tests/test-string.c, tests/test-strverscmp.c, tests/test-unistd.c,
+	tests/test-vc-list-files-cvs.sh, tests/test-vc-list-files-git.sh,
+	tests/test-wchar.c, tests/verify.h: Move gnulib tests to gl/.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* cfg.mk, maint.mk: Fix syntax-check rules.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Fix paths.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* gnulib: Remove gnulib/
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* gl/Makefile.am, gl/byteswap.in.h, gl/check-version.c,
+	gl/check-version.h, gl/des.c, gl/des.h, gl/dummy.c,
+	gl/m4/00gnulib.m4, gl/m4/autobuild.m4, gl/m4/byteswap.m4,
+	gl/m4/check-version.m4, gl/m4/des.m4, gl/m4/extensions.m4,
+	gl/m4/gnulib-cache.m4, gl/m4/gnulib-cache.m4~,
+	gl/m4/gnulib-common.m4, gl/m4/gnulib-comp.m4, gl/m4/gnulib-tool.m4,
+	gl/m4/include_next.m4, gl/m4/inline.m4, gl/m4/longlong.m4,
+	gl/m4/manywarnings.m4, gl/m4/md4.m4, gl/m4/multiarch.m4,
+	gl/m4/stdbool.m4, gl/m4/stddef_h.m4, gl/m4/stdint.m4,
+	gl/m4/string_h.m4, gl/m4/strverscmp.m4, gl/m4/unistd_h.m4,
+	gl/m4/warn-on-use.m4, gl/m4/warnings.m4, gl/m4/wchar.m4,
+	gl/m4/wchar_t.m4, gl/m4/wint_t.m4, gl/md4.c, gl/md4.h,
+	gl/stdbool.in.h, gl/stddef.in.h, gl/stdint.in.h, gl/string.in.h,
+	gl/strverscmp.c, gl/unistd.in.h, gl/wchar.in.h: Move gnulib files to
+	gl/.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac, lib/Makefile.am, lib/byteswap.in.h,
+	lib/check-version.c, lib/check-version.h, lib/des.c, lib/des.h,
+	lib/dummy.c, lib/md4.c, lib/md4.h, lib/stdbool.in.h,
+	lib/stddef.in.h, lib/stdint.in.h, lib/string.in.h,
+	lib/strverscmp.c, lib/unistd.in.h, lib/wchar.in.h, m4/00gnulib.m4,
+	m4/autobuild.m4, m4/byteswap.m4, m4/check-version.m4, m4/des.m4,
+	m4/extensions.m4, m4/gnulib-cache.m4, m4/gnulib-common.m4,
+	m4/gnulib-comp.m4, m4/gnulib-tool.m4, m4/include_next.m4,
+	m4/inline.m4, m4/longlong.m4, m4/manywarnings.m4, m4/md4.m4,
+	m4/multiarch.m4, m4/stdbool.m4, m4/stddef_h.m4, m4/stdint.m4,
+	m4/string_h.m4, m4/strverscmp.m4, m4/unistd_h.m4, m4/valgrind.m4,
+	m4/warn-on-use.m4, m4/warnings.m4, m4/wchar.m4, m4/wchar_t.m4,
+	m4/wint_t.m4, tests/Makefile.am: Move gnulib files to gl/.
+
+2010-01-12  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, build-aux/arg-nonnull.h, build-aux/link-warning.h,
+	build-aux/useless-if-before-free, build-aux/vc-list-files,
+	build-aux/warn-on-use.h, lib/Makefile.am, lib/byteswap.in.h,
+	lib/check-version.c, lib/check-version.h, lib/des.c, lib/des.h,
+	lib/dummy.c, lib/md4.c, lib/md4.h, lib/stdbool.in.h,
+	lib/stddef.in.h, lib/stdint.in.h, lib/string.in.h,
+	lib/strverscmp.c, lib/unistd.in.h, lib/wchar.in.h, m4/00gnulib.m4,
+	m4/autobuild.m4, m4/byteswap.m4, m4/check-version.m4, m4/des.m4,
+	m4/extensions.m4, m4/gnulib-cache.m4, m4/gnulib-common.m4,
+	m4/gnulib-comp.m4, m4/gnulib-tool.m4, m4/include_next.m4,
+	m4/inline.m4, m4/longlong.m4, m4/manywarnings.m4, m4/md4.m4,
+	m4/multiarch.m4, m4/stdbool.m4, m4/stddef_h.m4, m4/stdint.m4,
+	m4/string_h.m4, m4/strverscmp.m4, m4/unistd_h.m4,
+	m4/warn-on-use.m4, m4/warnings.m4, m4/wchar.m4, m4/wchar_t.m4,
+	m4/wint_t.m4, maint.mk, tests/Makefile.am, tests/dummy.c,
+	tests/intprops.h, tests/macros.h, tests/signature.h,
+	tests/test-byteswap.c, tests/test-des.c, tests/test-md4.c,
+	tests/test-stdbool.c, tests/test-stddef.c, tests/test-stdint.c,
+	tests/test-string.c, tests/test-strverscmp.c, tests/test-unistd.c,
+	tests/test-vc-list-files-cvs.sh, tests/test-vc-list-files-git.sh,
+	tests/test-wchar.c, tests/verify.h: Update gnulib files.
+
+2009-11-06  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2009-11-06  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 1.2.
+
+2009-11-06  Simon Josefsson <simon@josefsson.org>
+
+	* build-aux/useless-if-before-free, lib/Makefile.am, lib/md4.c,
+	lib/unistd.in.h, m4/unistd_h.m4, maint.mk: Update gnulib files.
+
+2009-09-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2009-09-24  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Fix build problem related to missing byteswap.h, for
+	mingw.
+
+2009-09-24  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/string.in.h, lib/unistd.in.h,
+	m4/gnulib-comp.m4, m4/openat.m4, m4/string_h.m4, m4/unistd_h.m4,
+	maint.mk: Update gnulib files.
+
+2009-09-06  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/md4.h, lib/stddef.in.h, lib/string.in.h,
+	lib/unistd.in.h, m4/gnulib-comp.m4, m4/openat.m4, m4/stddef_h.m4,
+	m4/string_h.m4, m4/unistd_h.m4, m4/wchar.m4, m4/wchar_t.m4,
+	maint.mk: Update gnulib files.
+
+2009-07-23  Simon Josefsson <simon@josefsson.org>
+
+	* build-aux/vc-list-files, lib/Makefile.am, lib/md4.h,
+	lib/string.in.h, lib/unistd.in.h, m4/string_h.m4, m4/unistd_h.m4,
+	maint.mk: Update gnulib files.
+
+2009-06-10  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump version properly.
+
+2009-06-03  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Bump versions.
+
+2009-06-03  Simon Josefsson <simon@josefsson.org>
+
+	* m4/include_next.m4, m4/manywarnings.m4, maint.mk: Update gnulib
+	files.
+
+2009-05-08  Simon Josefsson <simon@josefsson.org>
+
+	* cfg.mk: Fix -Werror handling.
+
+2009-05-08  Simon Josefsson <simon@josefsson.org>
+
+	* cfg.mk: Fix release target.
+
+2009-05-08  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2009-05-08  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 1.1.
+
+2009-05-08  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, cfg.mk: Fix release target.
+
+2009-05-05  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/wchar.in.h, m4/gnulib-comp.m4,
+	m4/multiarch.m4, m4/wchar.m4, maint.mk: Update gnulib files.
+
+2009-05-05  Simon Josefsson <simon@josefsson.org>
+
+	* .gitmodules: Drop gitmodules for now.
+
+2009-04-29  Simon Josefsson <simon@josefsson.org>
+
+	* .gitmodules, gnulib: add gnulib as a submodule
+
+2009-04-27  Simon Josefsson <simon@josefsson.org>
+
+	* .x-sc_makefile_check, .x-sc_prohibit_HAVE_MBRTOWC,
+	.x-sc_prohibit_atoi_atof, .x-sc_require_config_h,
+	.x-sc_require_config_h_first, .x-sc_space_tab, README, cfg.mk,
+	configure.ac, m4/valgrind.m4, test/dumper.c, test/getargs.c: Fix
+	syntax-check nits.
+
+2009-04-27  Simon Josefsson <simon@josefsson.org>
+
+	* maint.mk: Update gnulib files.
+
+2009-04-27  Simon Josefsson <simon@josefsson.org>
+
+	* build-aux/useless-if-before-free, build-aux/vc-list-files,
+	lib/Makefile.am, m4/gnulib-comp.m4, maint.mk: Update gnulib files.
+
+2009-04-15  Simon Josefsson <simon@josefsson.org>
+
+	* maint.mk: Update gnulib files.
+
+2009-03-30  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Only check for warning flags when using gcc.
+
+2009-03-30  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, lib/Makefile.am, lib/strdup.c, lib/unistd.in.h,
+	m4/gnulib-cache.m4, m4/gnulib-comp.m4, m4/strdup.m4, maint.mk: 
+	Update gnulib files.
+
+2009-03-02  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/stdint.in.h, lib/unistd.in.h,
+	lib/wchar.in.h, m4/00gnulib.m4, m4/byteswap.m4, m4/extensions.m4,
+	m4/gnulib-cache.m4, m4/gnulib-common.m4, m4/gnulib-comp.m4,
+	m4/include_next.m4, m4/inline.m4, m4/longlong.m4, m4/md4.m4,
+	m4/multiarch.m4, m4/stdbool.m4, m4/stdint.m4, m4/strdup.m4,
+	m4/strverscmp.m4, m4/unistd_h.m4, m4/wchar.m4, m4/wint_t.m4: Update
+	gnulib files.
+
+2008-12-11  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2008-12-11  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, test_ntlm.c: Fix warnings.
+
+2008-12-11  Simon Josefsson <simon@josefsson.org>
+
+	* cfg.mk, configure.ac, lib/Makefile.am, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, m4/manywarnings.m4, maint.mk: Use manywarnings
+	module.
+
+2008-12-09  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac, lib/Makefile.am, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, m4/warnings.m4: Use warnings module.
+
+2008-12-09  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac, lib/stdint.in.h, lib/unistd.in.h,
+	m4/include_next.m4, m4/valgrind.m4, maint.mk: Update gnulib files.
+	Use valgrind.m4.
+
+2008-10-22  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/unistd.in.h, m4/unistd_h.m4: Update gnulib
+	files.
+
+2008-10-20  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, lib/Makefile.am, lib/stdint.in.h, lib/string.in.h,
+	lib/unistd.in.h, lib/wchar.in.h, m4/gnulib-cache.m4,
+	m4/gnulib-common.m4, m4/unistd_h.m4, m4/wchar.m4: Update gnulib
+	files.
+
+2008-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Reorder.
+
+2008-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Use automake warnings.  Add copyright notice.
+	Fixes.
+
+2008-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, lib/Makefile.am, lib/malloc.c, lib/stdint.in.h,
+	lib/stdlib.in.h, lib/string.in.h, lib/unistd.in.h, lib/wchar.in.h,
+	m4/gnulib-comp.m4, m4/include_next.m4, m4/malloc.m4,
+	m4/stdlib_h.m4, m4/strdup.m4, m4/string_h.m4, m4/wchar.m4,
+	m4/wint_t.m4, maint.mk: Update gnulib files.
+
+2008-08-21  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Autobuild used via gnulib.
+
+2008-08-21  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Update gnulib files.
+
+2008-08-21  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, lib/Makefile.am, lib/check-version.c,
+	lib/stdbool.in.h, lib/stdlib.in.h, lib/string.in.h,
+	lib/strverscmp.h, m4/autobuild.m4, m4/extensions.m4,
+	m4/gnulib-cache.m4, m4/gnulib-common.m4, m4/gnulib-comp.m4,
+	m4/gnulib-tool.m4, m4/stdint.m4, m4/stdlib_h.m4, m4/string_h.m4,
+	m4/strverscmp.m4, maint.mk: Update gnulib files.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 1.0.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* smbutil.c: Fix syntax-check warning.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* cfg.mk: Fix license header.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Bump versions.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Revert required autoconf version.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Autoupdate.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* .clcopying, .cvscopying, Makefile.am: Rename changelog copying
+	conditions.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2008-04-12  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, lib/Makefile.am, lib/stdlib.in.h, lib/wchar.in.h,
+	m4/gnulib-common.m4, m4/gnulib-comp.m4, m4/include_next.m4,
+	m4/stdint.m4, m4/stdlib_h.m4: Update gnulib files.
+
+2008-03-25  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, build-aux/GNUmakefile, build-aux/maint.mk, cfg.mk,
+	lib/Makefile.am, m4/absolute-header.m4, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, m4/include_next.m4, maint-cfg.mk, maint.mk: 
+	Update gnulib files.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Push release.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Bump versions.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.4.2.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Fix.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, global.h, smbencrypt.c, smbutil.c, test_ntlm.c: 
+	Remove global.h, move definitions into each file.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac, global.h: No need for endian header files.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Need bigendian test.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* global.h, lib/Makefile.am, lib/byteswap.in.h, m4/byteswap.m4,
+	m4/gnulib-cache.m4, m4/gnulib-comp.m4, smbutil.c: Use gnulib
+	byteswap module.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS: Add.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, test_ntlm.c: Fix endian related bug in self test.  Reported
+	by Andrej Kacian <ticho@gentoo.org>, see
+	<https://savannah.nongnu.org/bugs/index.php?21288> and
+	<https://bugs.gentoo.org/show_bug.cgi?id=194282>.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: We assume ANSI C headers.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac, lib/Makefile.am, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, m4/inline.m4: Use gnulib inline module.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2008-03-05  Simon Josefsson <simon@josefsson.org>
+
+	* README: Fix security note.
+
+2008-03-02  Simon Josefsson <simon@josefsson.org>
+
+	* README: Fix warning.
+
+2008-03-02  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/unistd.in.h, m4/unistd_h.m4: Update.
+
+2008-02-14  Simon Josefsson <simon@josefsson.org>
+
+	* README: Note about security.
+
+2008-02-07  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/md4.c, lib/md4.h, lib/stdint.in.h,
+	lib/stdlib.in.h, lib/string.in.h, lib/unistd.in.h,
+	m4/gnulib-comp.m4, m4/longlong.m4, m4/md4.m4, m4/stdlib_h.m4,
+	m4/string_h.m4, m4/ulonglong.m4, m4/unistd_h.m4: Update gnulib
+	files.
+
+2007-10-29  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2007-10-29  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.4.1.
+
+2007-10-29  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Typo.
+
+2007-10-29  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Bump versions.
+
+2007-10-29  Simon Josefsson <simon@josefsson.org>
+
+	* build-aux/maint.mk, lib/Makefile.am, lib/stdbool.in.h,
+	lib/stdint.in.h, m4/gnulib-cache.m4, m4/gnulib-common.m4,
+	m4/longlong.m4, m4/ulonglong.m4: Update gnulib files.
+
+2007-10-16  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/dummy.c, lib/stdlib.in.h, lib/string.in.h: 
+	Update gnulib files.
+
+2007-10-02  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsusers: Remove unused .cvsusers.
+
+2007-10-02  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/string.in.h, m4/gnulib-comp.m4,
+	m4/stdint.m4, m4/string_h.m4: Update gnulib files.
+
+2007-10-02  Simon Josefsson <simon@josefsson.org>
+
+	* lib/stdbool.in.h, lib/stdbool_.h, lib/stdint.in.h, lib/stdint_.h,
+	lib/stdlib.in.h, lib/stdlib_.h, lib/string.in.h, lib/string_.h,
+	lib/unistd.in.h, lib/unistd_.h, lib/wchar.in.h, lib/wchar_.h: Update
+	gnulib files.
+
+2007-10-02  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore, build-aux/.cvsignore, lib/.cvsignore,
+	tests/.cvsignore: Remove unused .cvsignore's.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Fix bz2 vs gz.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.4.0.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Use git instead of cvs in release target.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Only export what public APIs in shared library.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2007-09-23  Simon Josefsson <simon@josefsson.org>
+
+	* build-aux/GNUmakefile, build-aux/maint.mk, lib/Makefile.am,
+	lib/malloc.c, lib/stdbool_.h, lib/stdint_.h, lib/stdlib_.h,
+	lib/string_.h, lib/unistd_.h, lib/wchar_.h, m4/absolute-header.m4,
+	m4/extensions.m4, m4/gnulib-cache.m4, m4/gnulib-comp.m4,
+	m4/include_next.m4, m4/malloc.m4, m4/stdint.m4, m4/stdlib_h.m4,
+	m4/string_h.m4, m4/strverscmp.m4, m4/unistd_h.m4, m4/wchar.m4,
+	tests/test-des.c, tests/test-md4.c: Update gnulib files.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.13.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS: Update PGP key.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* smbencrypt.c: Use new gnulib DES API.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* lib/.cvsignore: [no log message]
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore, ChangeLog, build-aux/.cvsignore, lib/.cvsignore: [no
+	log message]
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile: Update.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, build-aux/GNUmakefile, build-aux/link-warning.h,
+	build-aux/maint.mk, lib/.cvsignore, lib/Makefile.am,
+	lib/check-version.c, lib/des.c, lib/des.h, lib/dummy.c, lib/md4.c,
+	lib/stdbool_.h, lib/stdint_.h, lib/strdup.c, lib/strdup.h,
+	lib/string_.h, lib/strverscmp.c, lib/unistd_.h, lib/wchar_.h,
+	m4/extensions.m4, m4/gnulib-cache.m4, m4/gnulib-common.m4,
+	m4/gnulib-comp.m4, m4/longlong.m4, m4/onceonly_2_57.m4,
+	m4/stdint.m4, m4/strdup.m4, m4/string_h.m4, m4/ulonglong.m4,
+	m4/unistd_h.m4, m4/wchar.m4, maint-cfg.mk, maint.mk,
+	tests/test-des.c: Update.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* maint-cfg.mk: Update.
+
+2007-03-27  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump version.  Require newer autoconf/automake.  Use
+	build-aux/.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.12.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Require autoconf 2.60, and automake 1.9.  Enable
+	gnits.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog, lib/.cvsignore: [no log message]
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS: Update PGP key.  Typo.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS: Fix.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Fix valgrind use.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Check for valgrind.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac, global.h, lib/Makefile.am, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, m4/unistd_h.m4: Use unistd module.  Don't use
+	strings.h (obsolete).
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2006-08-24  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/check-version.c, lib/stdint_.h,
+	lib/strverscmp.c, m4/absolute-header.m4, m4/check-version.m4,
+	m4/des.m4, m4/gnulib-cache.m4, m4/gnulib-comp.m4, m4/inttypes.m4,
+	m4/longlong.m4, m4/md4.m4, m4/onceonly_2_57.m4, m4/stdbool.m4,
+	m4/stdint.m4, m4/strdup.m4, m4/strverscmp.m4: Update.
+
+2006-06-22  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Make portable to mingw.
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.11.
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Use valgrind, if available.
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2006-05-16  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/des.c, lib/md4.c, lib/stdint_.h,
+	m4/gnulib-cache.m4, m4/gnulib-comp.m4: Update.
+
+2006-03-29  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Fix bug report address.
+
+2006-03-29  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS, README: Add.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump version.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Typo.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.10.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* : Remove.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, maint-cfg.mk: Fix indent.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Add -no-undefined, for win32.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Fix.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* GNUmakefile, NEWS, maint-cfg.mk, maint.mk: Add.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, m4/gnulib-cache.m4, m4/gnulib-comp.m4: Update.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump version.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS: Update PGP key.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* autogen.sh: Remove.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, ntlm.h.in, smbencrypt.c, smbencrypt.h, smbutil.c: 
+	Rename SMBencrypt to ntlm_smb_encrypt.  Rename SMBNTencrypt to
+	ntlm_smb_nt_encrypt.  Export the new APIs.
+
+2006-03-24  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS, lib/Makefile.am, lib/dummy.c, lib/stdbool_.h,
+	lib/stdint_.h, m4/gnulib-cache.m4, m4/gnulib-comp.m4,
+	m4/stdbool.m4, m4/stdint.m4: Add.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.9.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* tests/.cvsignore: [no log message]
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac, lib/Makefile.am, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, tests/Makefile.am, tests/test-des.c,
+	tests/test-md4.c: Add gnulib self tests.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* global.h: Avoid word16/word32.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS: Fix.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in: Need stdio.h, for FILE.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* : Remove.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-10-23  Simon Josefsson <simon@josefsson.org>
+
+	* lib/md4.c, lib/md4.h, m4/gnulib-comp.m4: Update.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, lib/Makefile.am, lib/md4.c, lib/md4.h,
+	m4/gnulib-cache.m4, m4/gnulib-comp.m4, m4/md4.m4, md4.c, md4.h,
+	smbencrypt.c, test_ntlm.c: Use gnulib m4 module.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* smbencrypt.c: Remove unneeded stuff.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* smbencrypt.c, test_ntlm.c: Indent.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* smbencrypt.c: Use inline, we can.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-10-18  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, des.c, des.h, lib/Makefile.am, lib/des.c, lib/des.h,
+	lib/stdbool_.h, lib/stdint_.h, m4/des.m4, m4/gnulib-cache.m4,
+	m4/gnulib-comp.m4, m4/inttypes.m4, m4/stdbool.m4, m4/stdint.m4,
+	smbencrypt.c: Use des from gnulib.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.8.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS: add
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* README: Remove old cruft.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* COPYING: Use lgpl.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac, m4/autobuild.m4: Use autobuild.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Use new gnulib API.
+
+2005-09-27  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/check-version.c, lib/strverscmp.c,
+	m4/gnulib-cache.m4, m4/gnulib-comp.m4, m4/gnulib-tool.m4,
+	m4/gnulib.m4, m4/onceonly_2_57.m4, m4/strdup.m4: Update gnulib.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* lib/check-version.c: Update.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* lib/.cvsignore: [no log message]
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* test_ntlm.c: Check version too.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Remove version.c.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Fix warning.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac, lib/Makefile.am, lib/check-version.c,
+	lib/check-version.h, m4/check-version.m4, m4/gnulib.m4, version.c: 
+	Replace version.c with check-version gnulib module.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in, smbutil.c: Indent.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore: [no log message]
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Build libntlm.spec.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm.spec: Remove (see libntlm.spec.in).
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, libntlm.spec.in: Add.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* test_ntlm.c: Use memset instead of bzero.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/strdup.c, lib/strdup.h, m4/gnulib.m4,
+	m4/strdup.m4: Add strdup.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Assume somewhat modern system.  Add strdup as gnulib
+	module.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* global.h: Remove bzero.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* des.c: Use memset instead of bzero.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Simplify.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Fix bug report e-mail.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in, smbutil.c: Add API that doesn't treat @ in USER as a
+	DOMAIN, suggested by David Leonard <davidl@vintela.com>.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Typo.
+
+2005-07-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, THANKS: Add.
+
+2005-07-17  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm.spec: Typo.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Bump versions.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm.spec: Update.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.7.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Dist libntlm.spec.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac, global.h, md4.c, ntlm.h.in,
+	smbencrypt.c, smbutil.c, test_ntlm.c: Fix license.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* COPYING: Update.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS: Update copyright.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Add -I for gnulib.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* version.c: Rewrite, using strverscmp.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in: Add ntlm_check_version.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* lib/Makefile.am, lib/strverscmp.c, lib/strverscmp.h, m4/gnulib.m4: 
+	Update.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Use LGPL.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* lib/.cvsignore: [no log message]
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Typo.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Reorder.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Pick up gnulib macros from m4/.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Link with gnulib.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac, lib/Makefile.am, lib/strverscmp.c,
+	lib/strverscmp.h, m4/gnulib.m4, m4/onceonly_2_57.m4,
+	m4/strverscmp.m4: Use gnulib.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2005-07-15  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm.spec: Add, contributed by anonymous.
+
+2004-10-06  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2004-10-06  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS, configure.ac: Bump versions.
+
+2004-10-06  Simon Josefsson <simon@josefsson.org>
+
+	* global.h, smbencrypt.c, smbutil.c: Fix warnings, from ZIGLIO,
+	Frediano.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* des.h, smbutil.c: Indent.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.6.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Fix.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* test.txt: Update, from Frediano Ziglio.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* test_ntlm.c: Fix, from Frediano Ziglio.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* smbutil.c: From Frediano Ziglio: Do not include c files (cause you
+	linked compiled versions).  Remove warnings.  Add inline again (now
+	safe).  Minimize fprintf calls.  Use ms order for fields.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* smbencrypt.c: Remove warning, from Frediano Ziglio.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* des.h: Added missing declaration to avoid warnings and possible
+	problems, from Frediano Ziglio.
+
+2004-09-30  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Add test for inline, from Frediano Ziglio.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.5.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Simplify debugging of test_ntlm.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump versions.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* smbutil.c: Don't use inline, not portabl.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* test_ntlm.c: C89 compatible.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: (release): Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: (release): Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: (release): Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.4.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: ISO certify dates.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore: [no log message]
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump so version.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* des.c, des.h, global.h, md4.c, md4.h, smbencrypt.c, smbutil.c,
+	test_ntlm.c: Indent.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: (ChangeLog): Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* smbbyteorder.h: Remove.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* COPYING: Use LGPL.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS, Makefile.am, NEWS: Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Fix.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* .cvscopying, AUTHORS, NEWS, THANKS: Add.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog, Makefile.am, configure.ac, des.c, des.h, global.h,
+	md4.c, md4.h, ntlm.h.in, smbdes.c, smbdes.h, smbencrypt.c,
+	smbencrypt.h, smbmd4.c, smbmd4.h, smbutil.c, test.txt, test_ntlm.c,
+	version.c: Rewrite stuff to be LGPL, from Frediano Ziglio
+	<freddyz77@tin.it>.
+
+2004-09-22  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore: [no log message]
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in, smbutil.c: Add.
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.3.
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* smbbyteorder.h, smbdes.c, smbdes.h, smbencrypt.c, smbencrypt.h,
+	smbmd4.c, smbmd4.h, smbutil.c, version.c: Use const.  Indent.
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add.
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Bump version.
+
+2004-09-18  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in: Use const.  Indent.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Fix release target.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.2.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore, ChangeLog: [no log message]
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS: Fix.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* README: Fix copying conditions.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Add spiff.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm.pc.in: Add copying conditions.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Fix maintainer targets.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS: Fix.
+
+2003-03-17  Simon Josefsson <simon@josefsson.org>
+
+	* autogen.sh: Cleanup.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* COPYING: Autoreconf updated it.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Fix.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, NEWS, README, THANKS: Fix copying conditions.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore: Add.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* configure.ac: Add copying conditions.  Remove some unnecessary
+	things.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS: Add Andrew Tridgell and copying conditions.
+
+2002-12-05  Simon Josefsson <simon@josefsson.org>
+
+	* autogen.sh: Use autoreconf.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am: Exclude some files from ChangeLog.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* libntlm.pc.in: Don't -I libdir.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: [no log message]
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: 0.3.1.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog: Generated.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* THANKS: Gnits wanted this.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore: Fix.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile.am, configure.ac, libntlm-config.in, libntlm.m4,
+	libntlm.pc.in: Use pkg-config instead of libntlm.m4 +
+	libntlm-config.  Autogenerate ChangeLog's.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* autogen.sh: Gnits.
+
+2002-10-19  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsusers: New file, for ChangeLog names.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* .cvsignore: [no log message]
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* smb.h: smb.h: Removed (not used).
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h.in: ntlm.h.in: Version define, protect from double
+	inclusion, protect C++.  Renamed ntlm.h to ntlm.h.in.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* Makefile: Makefile: Removed
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* AUTHORS, Makefile.am, configure.ac, libntlm-config.in, libntlm.m4: 
+	AUTHORS, ChangeLog, configure.ac, Makefile.am, libntlm-config.in,
+	libntlm.m4, version.c: New files.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* ChangeLog, autogen.sh: [no log message]
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* smbutil.c: * smbutil.c: Fixup version string.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* version.c: * AUTHORS, ChangeLog, configure.ac, Makefile.am, libntlm-config.in,
+	libntlm.m4, version.c: New files.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* NEWS: Version 0.3.0 released.  Renamed HISTORY to NEWS.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* ntlm.h, ntlm.h.in: Moved ntlm.h to ntlm.h.in.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* HISTORY, NEWS: Moved HISTORY to NEWS.
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* HISTORY, Makefile, smbutil.c, test/dumper.c: Imported version 0.21
+	of libntlm: ftp://ftp.visi.com/users/grante/ntlm/libntlm-0.21.tar.gz
+	6c3bbf8cea65b2a78a416ec72cf2d6ee
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* COPYING, HISTORY, Makefile, README, smbutil.c, test/COPYING,
+	test/Makefile, test/README, test/dumper.c, test/getargs.c,
+	test/getargs.h: Imported version 0.2 of libntlm:
+	ftp://ftp.visi.com/users/grante/ntlm/libntlm-0.2.tar.gz
+	0b8248a9d8f183522ddeaf88f2e18fc4
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* HISTORY, Makefile, smbutil.c: Imported version 0.1 of libntlm:
+	ftp://ftp.visi.com/users/grante/ntlm/libntlm-0.1.tar.gz
+	101c0ffe2415f353caec270ddb34e7ac
+
+2002-10-01  Simon Josefsson <simon@josefsson.org>
+
+	* Imported version 0.0 of libntlm:
+	ftp://ftp.visi.com/users/grante/ntlm/libntlm-0.0.tar.gz MD5:
+	88403e851f297b227df9ca509fbabb7b
+
+	----------------------------------------------------------------------
+	Copyright 2002, 2003, 2004  Simon Josefsson
+	Copying and distribution of this file, with or without modification,
+	are permitted in any medium without royalty provided the copyright
+	notice and this notice are preserved.

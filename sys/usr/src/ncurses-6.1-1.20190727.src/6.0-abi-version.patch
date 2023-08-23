@@ -1,0 +1,22 @@
+--- origsrc/ncurses-6.0-20170121/configure	2017-01-21 10:16:16.000000000 -0600
++++ src/ncurses-6.0-20170121/configure	2017-01-24 22:50:49.111114900 -0600
+@@ -4957,7 +4957,7 @@ test -z "$cf_cv_libtool_version" && unse
+ echo "$as_me: error: Cannot find libtool" >&2;}
+    { (exit 1); exit 1; }; }
+ 	fi
+-	LIB_CREATE='${LIBTOOL} --mode=link ${CC} -rpath ${libdir} ${LIBTOOL_VERSION} `cut -f1 ${top_srcdir}/VERSION` ${LIBTOOL_OPTS} ${LT_UNDEF} $(LIBS) -o'
++	LIB_CREATE='${LIBTOOL} --mode=link ${CC} -rpath ${libdir} ${LIBTOOL_VERSION} ${ABI_VERSION}:0 ${LIBTOOL_OPTS} ${LT_UNDEF} $(LIBS) -o'
+ 	LIB_OBJECT='${OBJECTS:.o=.lo}'
+ 	LIB_SUFFIX=.la
+ 	LIB_CLEAN='${LIBTOOL} --mode=clean'
+--- origsrc/ncurses-6.0-20170121/mk-1st.awk	2016-12-31 11:04:34.000000000 -0600
++++ src/ncurses-6.0-20170121/mk-1st.awk	2017-01-24 22:51:49.813746800 -0600
+@@ -449,7 +449,7 @@ END	{
+ 				printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) $(%s) \\\n", CC_NAME, CC_FLAG;
+ 				printf "\t\t-o %s $(%s_OBJS:$o=.lo) \\\n", lib_name, OBJS;
+ 				printf "\t\t-rpath $(libdir) \\\n";
+-				printf "\t\t%s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(%s) $(LDFLAGS)\n", libtool_version, which_list;
++				printf "\t\t%s $(ABI_VERSION):0 $(LT_UNDEF) $(%s) $(LDFLAGS)\n", libtool_version, which_list;
+ 				print  ""
+ 				print  "install \\"
+ 				print  "install.libs \\"

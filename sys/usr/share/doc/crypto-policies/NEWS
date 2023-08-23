@@ -1,0 +1,7 @@
+* Fedora 28:
+  - Added Ed25519, and Ed448 signature algorithms
+  - Added RSA-PSS signatures algorithms with SHA1 and SHA2
+  - Added notion of groups (i.e., including FFDHE), replacing
+    the notion of curves.
+  - gnutls: updated for new signature algorithms and groups
+

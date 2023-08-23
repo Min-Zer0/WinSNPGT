@@ -1,0 +1,60 @@
+NAME="python3"
+VERSION=3.8.6
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="Meta-package for Python 3 default version"
+DESCRIPTION="Python is an interpreted, interactive, object-oriented programming
+language. It incorporates modules, exceptions, dynamic typing, very high level
+dynamic data types, and classes. Python combines remarkable power with very
+clear syntax. It has interfaces to many system calls and libraries, as well as
+to various window systems, and is extensible in C or C++. It is also usable as
+an extension language for applications that need a programmable interface."
+HOMEPAGE="https://www.python.org/"
+SRC_URI= # none
+SRC_DIR=.
+
+#ARCH=noarch
+
+slot=${VERSION:0:3}
+abi=${slot}
+
+PKG_NAMES="python3 python3-devel idle3"
+python3_REQUIRES="python${slot/.}"
+python3_CONTENTS="
+	usr/share/man/man1/python3.1*
+"
+# pyvenv
+
+python3_devel_REQUIRES="${NAME} python${slot/.}-devel"
+python3_devel_CONTENTS="
+	usr/lib/pkgconfig/python3.pc
+"
+idle3_REQUIRES="${NAME} idle${slot/.}"
+idle3_CONTENTS=""
+
+# for 3.6 only
+PKG_NAMES+=" python3-debuginfo python3-test python3-tkinter"
+python3_debuginfo_CATEGORY="_obsolete"
+python3_debuginfo_REQUIRES="python38-debuginfo"
+python3_test_CATEGORY="_obsolete"
+python3_test_REQUIRES="python38-test"
+python3_tkinter_CATEGORY="_obsolete"
+python3_tkinter_REQUIRES="python38-tkinter"
+
+src_compile() { :; }
+
+src_install() {
+	dodir /usr/bin
+#	dosym python${abi}.exe /usr/bin/python3
+#	dosym pydoc${slot} /usr/bin/pydoc3
+#	dosym pyvenv-${slot} /usr/bin/pyvenv
+#	dosym python${abi}-config /usr/bin/python3-config
+#	dosym 2to3-${slot} /usr/bin/2to3
+#	dosym idle${slot} /usr/bin/idle3
+
+	dodir /usr/share/man/man1
+	dosym python${slot}.1 /usr/share/man/man1/python3.1
+
+	dodir /usr/lib/pkgconfig
+	dosym python-${slot}.pc /usr/lib/pkgconfig/python3.pc
+}

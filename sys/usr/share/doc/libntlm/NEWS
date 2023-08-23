@@ -1,0 +1,207 @@
+Libntlm NEWS -- history of user-visible changes.                -*- outline -*-
+Copyright (C) 2002-2013 Simon Josefsson
+Copyright (C) 1999 Grant Edwards
+See the end for copying conditions.
+
+* Version 1.4 (released 2013-07-08)
+
+** Fix build issues.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 1.3 (released 2011-06-20)
+
+** Update gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 1.2 (released 2009-11-06)
+
+** Fix build error when cross-compiling to MinGW.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 1.1 (released 2009-05-08)
+
+** Update gnulib files.
+
+** The core library is now compiled with many warning flags.
+Some warnings have been fixed too.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 1.0 (released 2008-04-12)
+
+** Update gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.4.2 (released 2008-03-05)
+
+** Fix endian related bug in self test.
+Reported by Andrej Kacian <ticho@gentoo.org>, see
+<https://savannah.nongnu.org/bugs/index.php?21288> and
+<https://bugs.gentoo.org/show_bug.cgi?id=194282>.
+
+** Add a note in README about NTLM being a insecure protocol.
+
+** Cleaned up internal endianness handling.
+
+** Update of gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.4.1 (released 2007-10-29)
+
+** Update of gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.4.0 (released 2007-09-23)
+
+** Only public API functions are exported in shared library.
+Using libtool's -export-symbols-regex.
+
+** Update of gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.3.13 (released 2007-03-27)
+
+** Update of gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.3.12 (released 2006-08-24)
+
+** Update of gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.3.11 (released 2006-05-16)
+
+** Fix buggy MD4 implementation on 64-bit platforms.
+
+** Self tests are run under valgrind, if available.
+
+** Updated gnulib files.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.3.10 (released 2006-03-24)
+
+** The library is linked with -no-undefined, to enable building a Windows DLL.
+
+** Add new APIs to access the SMBencrypt and SMBNTencrypt functions.
+Suggested by Pavel Fedin <fedin@matek.ru>.
+
+** API and ABI modifications.
+ntlm_smb_encrypt: ADD
+ntlm_smb_nt_encrypt: ADD
+
+* Version 0.3.9 (released 2005-10-23)
+
+** DES and MD4 functionality replaced with gnulib modules.
+These modules also comes with self tests.
+
+** API and ABI modifications.
+No changes since last version.
+
+* Version 0.3.8 (released 2005-09-27)
+
+** New: buildSmbNtlmAuthRequest_noatsplit, buildSmbNtlmAuthResponse_noatsplit.
+These functions can be used when your username contains '@' and you do
+not wish that the remainder of the string is treated as a REALM value.
+Suggested by David Leonard <davidl@vintela.com>.
+
+** Uses memset instead of bzero.
+
+** Fix license typo in libntlm.spec.
+
+** Made the COPYING file contain LGPL, not GPL.
+
+** Updated gnulib files.
+
+** API and ABI modifications.
+buildSmbNtlmAuthRequest_noatsplit: ADD.
+buildSmbNtlmAuthResponse_noatsplit: ADD.
+
+* Version 0.3.7 (released 2005-07-15)
+
+** A RPM *.spec file is included.
+
+** Fix compiler warnings, contributed by Frediano Ziglio.
+
+** Gnulib is used, currently only to provide more robust ntlm_check_version.
+
+** Address in license was updated to reflect the new FSF postal address.
+
+* Version 0.3.6 (released 2004-09-30)
+
+** Some code cleanup and improvements, contributed by Frediano Ziglio.
+
+** Slight changes in output vectors, contributed by Frediano Ziglio.
+
+* Version 0.3.5 (released 2004-09-23)
+
+** Make it compile on C89 platforms.
+
+* Version 0.3.4 (released 2004-09-23)
+
+** The license has been changed from GPL to LGPL.
+Thanks to a rewrite of several files, contributed by Frediano Ziglio.
+
+** The output may now be slightly different, due to a bug in earlier versions.
+Unused parts of the output string are now initialized to 0 consistently.
+
+* Version 0.3.3 (released 2004-09-18)
+
+** Use const for buildSmbNtlmAuthRequest() and buildSmbNtlmAuthResponse().
+
+** Source code is indented according to GNU Coding Standard.
+
+* Version 0.3.2 (released 2003-03-17)
+
+** Further build cleanups.
+
+* Version 0.3.1 (released 2002-10-19)
+
+** Uses automake 1.7, gnits and pkg-config.  Still no code changes.
+
+* Version 0.3.0 (released 2002-10-01)
+
+** Added autoconf, automake and libtool support.  Unofficial release made
+** by Simon Josefsson.
+
+* Revsion 0.21 (released 1999-10-07)
+
+** Added support for usernames with embedded domain strings of the
+** format username@domain.  If present, the domain will override the
+** domain that is returned by the host in the challenge.
+
+* Version 0.2 (released 1999-10-06)
+
+** Fixed another byte-order problem in unicode routine in smbutil.c.
+** Added a copy of GPL to the distribution.  Added test driver
+** program directory.
+
+* Version 0.1 (released 1999-10-05)
+
+** Fixed usage of byte-order macros in smbutil.c.  Hopefully this
+** will make it work on SPARC machines...
+
+----------------------------------------------------------------------
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

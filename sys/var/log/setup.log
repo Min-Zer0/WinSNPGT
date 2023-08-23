@@ -1,0 +1,559 @@
+2022/12/17 17:18:09 Starting cygwin install, version 2.924
+2022/12/17 17:18:09 User has backup/restore rights
+2022/12/17 17:18:09 User has symlink creation right
+2022/12/17 17:18:09 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2022/12/17 17:18:09 Current Directory: E:\0ther
+2022/12/17 17:18:14 source: network install
+2022/12/17 17:18:29 root: E:\G system
+2022/12/17 17:18:33 Selected local directory: E:\G
+2022/12/17 17:18:35 net: Preconfig
+2022/12/17 17:18:39 site: https://mirrors.163.com/cygwin/
+2022/12/17 17:18:42 io_stream_cygfile: fopen(/etc/setup/timestamp) failed 2 No such file or directory
+2022/12/17 17:18:42 io_stream_cygfile: fopen(/etc/setup/installed.db) failed 2 No such file or directory
+2022/12/17 17:18:42 solving: 37 tasks, update: yes, use test packages: no
+2022/12/17 17:18:50 solving: 73 tasks, update: no, use test packages: no
+2022/12/17 17:18:50 Augmented Transaction List:
+2022/12/17 17:18:50    0 install base-cygwin     3.8-1          
+2022/12/17 17:18:50    1 install cygwin          3.4.2-1        
+2022/12/17 17:18:50    2 install libpopt-common  1.18-1         
+2022/12/17 17:18:50    3 install rebase          4.6.1-1        
+2022/12/17 17:18:50    4 install terminfo        6.3-1.20220416 
+2022/12/17 17:18:50    5 install terminfo-extra  6.3-1.20220416 
+2022/12/17 17:18:50    6 install tzdata          2022g-1        
+2022/12/17 17:18:50    7 install zlib0           1.2.13-1       
+2022/12/17 17:18:50    8 install which           2.20-2         
+2022/12/17 17:18:50    9 install run             1.3.4-2        
+2022/12/17 17:18:50   10 install mintty          3.6.2-1        
+2022/12/17 17:18:50   11 install login           1.13-1         
+2022/12/17 17:18:50   12 install libtasn1_6      4.14-1         
+2022/12/17 17:18:50   13 install libsigsegv2     2.10-2         
+2022/12/17 17:18:50   14 install libpipeline1    1.5.6-1        
+2022/12/17 17:18:50   15 install libpcre2_8_0    10.41-1        
+2022/12/17 17:18:50   16 install liblzma5        5.2.9-1        
+2022/12/17 17:18:50   17 install liblz4_1        1.9.4-1        
+2022/12/17 17:18:50   18 install libiconv2       1.17-1         
+2022/12/17 17:18:50   19 install libgmp10        6.2.1-2        
+2022/12/17 17:18:50   20 install libgcc1         11.3.0-1       
+2022/12/17 17:18:50   21 install libffi6         3.2.1-2        
+2022/12/17 17:18:50   22 install libbz2_1        1.0.8-1        
+2022/12/17 17:18:50   23 install libargp         20110921-3     
+2022/12/17 17:18:50   24 install ipc-utils       1.0-2          
+2022/12/17 17:18:50   25 install hostname        3.13-1         
+2022/12/17 17:18:50   26 install editrights      1.03-1         
+2022/12/17 17:18:50   27 install dash            0.5.11.5-1     
+2022/12/17 17:18:50   28 install libncursesw10   6.3-1.20220416 
+2022/12/17 17:18:50   29 install libintl8        0.21.1-2       
+2022/12/17 17:18:50   30 install libstdc++6      11.3.0-1       
+2022/12/17 17:18:50   31 install libmpfr6        4.1.1-1        
+2022/12/17 17:18:50   32 install file            5.41-2         
+2022/12/17 17:18:50   33 install getent          2.18.90-4      
+2022/12/17 17:18:50   34 install _autorebase     001091-1       
+2022/12/17 17:18:50   35 install vim-minimal     8.2.4372-1     
+2022/12/17 17:18:50   36 install ncurses         6.3-1.20220416 
+2022/12/17 17:18:50   37 install libreadline7    8.2-2          
+2022/12/17 17:18:50   38 install less            590-1          
+2022/12/17 17:18:50   39 install sed             4.9-1          
+2022/12/17 17:18:50   40 install libuuid1        2.33.1-2       
+2022/12/17 17:18:50   41 install libsmartcols1   2.33.1-2       
+2022/12/17 17:18:50   42 install libpopt0        1.18-1         
+2022/12/17 17:18:50   43 install libp11-kit0     0.23.20-1      
+2022/12/17 17:18:50   44 install libgdbm6        1.18.1-1       
+2022/12/17 17:18:50   45 install libattr1        2.4.48-2       
+2022/12/17 17:18:50   46 install info            6.8-2          
+2022/12/17 17:18:50   47 install diffutils       3.8-1          
+2022/12/17 17:18:50   48 install alternatives    1.3.30c-10     
+2022/12/17 17:18:50   49 install libblkid1       2.33.1-2       
+2022/12/17 17:18:50   50 install cygutils        1.4.17-1       
+2022/12/17 17:18:50   51 install p11-kit-trust   0.23.20-1      
+2022/12/17 17:18:50   52 install p11-kit         0.23.20-1      
+2022/12/17 17:18:50   53 install coreutils       9.0-1          
+2022/12/17 17:18:50   54 install bash            4.4.12-3       
+2022/12/17 17:18:50   55 install tzcode          2022g-1        
+2022/12/17 17:18:50   56 install libfdisk1       2.33.1-2       
+2022/12/17 17:18:50   57 install zstd            1.5.2-1        
+2022/12/17 17:18:50   58 install xz              5.2.9-1        
+2022/12/17 17:18:50   59 install gzip            1.12-1         
+2022/12/17 17:18:50   60 install groff           1.22.4-1       
+2022/12/17 17:18:50   61 install grep            3.8-2          
+2022/12/17 17:18:50   62 install gawk            5.2.1-1        
+2022/12/17 17:18:50   63 install findutils       4.9.0-1        
+2022/12/17 17:18:50   64 install crypto-policies 20190218-1     
+2022/12/17 17:18:50   65 install ca-certificates 2022.2.54-3    
+2022/12/17 17:18:50   66 install bzip2           1.0.8-1        
+2022/12/17 17:18:50   67 install util-linux      2.33.1-2       
+2022/12/17 17:18:50   68 install base-files      4.3-3          
+2022/12/17 17:18:50   69 install libssl1.1       1.1.1s-1       
+2022/12/17 17:18:50   70 install tar             1.34-1         
+2022/12/17 17:18:50   71 install man-db          2.11.1-1       
+2022/12/17 17:18:50   72 install openssl         1.1.1s-1       
+2022/12/17 17:19:06 solving: 73 tasks, update: no, use test packages: no
+2022/12/17 17:19:06 Augmented Transaction List:
+2022/12/17 17:19:06    0 install base-cygwin     3.8-1          
+2022/12/17 17:19:06    1 install cygwin          3.4.2-1        
+2022/12/17 17:19:06    2 install libpopt-common  1.18-1         
+2022/12/17 17:19:06    3 install rebase          4.6.1-1        
+2022/12/17 17:19:06    4 install terminfo        6.3-1.20220416 
+2022/12/17 17:19:06    5 install terminfo-extra  6.3-1.20220416 
+2022/12/17 17:19:06    6 install tzdata          2022g-1        
+2022/12/17 17:19:06    7 install zlib0           1.2.13-1       
+2022/12/17 17:19:06    8 install which           2.20-2         
+2022/12/17 17:19:06    9 install run             1.3.4-2        
+2022/12/17 17:19:06   10 install mintty          3.6.2-1        
+2022/12/17 17:19:06   11 install login           1.13-1         
+2022/12/17 17:19:06   12 install libtasn1_6      4.14-1         
+2022/12/17 17:19:06   13 install libsigsegv2     2.10-2         
+2022/12/17 17:19:06   14 install libpipeline1    1.5.6-1        
+2022/12/17 17:19:06   15 install libpcre2_8_0    10.41-1        
+2022/12/17 17:19:06   16 install liblzma5        5.2.9-1        
+2022/12/17 17:19:06   17 install liblz4_1        1.9.4-1        
+2022/12/17 17:19:06   18 install libiconv2       1.17-1         
+2022/12/17 17:19:06   19 install libgmp10        6.2.1-2        
+2022/12/17 17:19:06   20 install libgcc1         11.3.0-1       
+2022/12/17 17:19:06   21 install libffi6         3.2.1-2        
+2022/12/17 17:19:06   22 install libbz2_1        1.0.8-1        
+2022/12/17 17:19:06   23 install libargp         20110921-3     
+2022/12/17 17:19:06   24 install ipc-utils       1.0-2          
+2022/12/17 17:19:06   25 install hostname        3.13-1         
+2022/12/17 17:19:06   26 install editrights      1.03-1         
+2022/12/17 17:19:06   27 install dash            0.5.11.5-1     
+2022/12/17 17:19:06   28 install libncursesw10   6.3-1.20220416 
+2022/12/17 17:19:06   29 install libintl8        0.21.1-2       
+2022/12/17 17:19:06   30 install libstdc++6      11.3.0-1       
+2022/12/17 17:19:06   31 install libmpfr6        4.1.1-1        
+2022/12/17 17:19:06   32 install file            5.41-2         
+2022/12/17 17:19:06   33 install getent          2.18.90-4      
+2022/12/17 17:19:06   34 install _autorebase     001091-1       
+2022/12/17 17:19:06   35 install vim-minimal     8.2.4372-1     
+2022/12/17 17:19:06   36 install ncurses         6.3-1.20220416 
+2022/12/17 17:19:06   37 install libreadline7    8.2-2          
+2022/12/17 17:19:06   38 install less            590-1          
+2022/12/17 17:19:06   39 install sed             4.9-1          
+2022/12/17 17:19:06   40 install libuuid1        2.33.1-2       
+2022/12/17 17:19:06   41 install libsmartcols1   2.33.1-2       
+2022/12/17 17:19:06   42 install libpopt0        1.18-1         
+2022/12/17 17:19:06   43 install libp11-kit0     0.23.20-1      
+2022/12/17 17:19:06   44 install libgdbm6        1.18.1-1       
+2022/12/17 17:19:06   45 install libattr1        2.4.48-2       
+2022/12/17 17:19:06   46 install info            6.8-2          
+2022/12/17 17:19:06   47 install diffutils       3.8-1          
+2022/12/17 17:19:06   48 install alternatives    1.3.30c-10     
+2022/12/17 17:19:06   49 install libblkid1       2.33.1-2       
+2022/12/17 17:19:06   50 install cygutils        1.4.17-1       
+2022/12/17 17:19:06   51 install p11-kit-trust   0.23.20-1      
+2022/12/17 17:19:06   52 install p11-kit         0.23.20-1      
+2022/12/17 17:19:06   53 install coreutils       9.0-1          
+2022/12/17 17:19:06   54 install bash            4.4.12-3       
+2022/12/17 17:19:06   55 install tzcode          2022g-1        
+2022/12/17 17:19:06   56 install libfdisk1       2.33.1-2       
+2022/12/17 17:19:06   57 install zstd            1.5.2-1        
+2022/12/17 17:19:06   58 install xz              5.2.9-1        
+2022/12/17 17:19:06   59 install gzip            1.12-1         
+2022/12/17 17:19:06   60 install groff           1.22.4-1       
+2022/12/17 17:19:06   61 install grep            3.8-2          
+2022/12/17 17:19:06   62 install gawk            5.2.1-1        
+2022/12/17 17:19:06   63 install findutils       4.9.0-1        
+2022/12/17 17:19:06   64 install crypto-policies 20190218-1     
+2022/12/17 17:19:06   65 install ca-certificates 2022.2.54-3    
+2022/12/17 17:19:06   66 install bzip2           1.0.8-1        
+2022/12/17 17:19:06   67 install util-linux      2.33.1-2       
+2022/12/17 17:19:06   68 install base-files      4.3-3          
+2022/12/17 17:19:06   69 install libssl1.1       1.1.1s-1       
+2022/12/17 17:19:06   70 install tar             1.34-1         
+2022/12/17 17:19:06   71 install man-db          2.11.1-1       
+2022/12/17 17:19:06   72 install openssl         1.1.1s-1       
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/base-cygwin/base-cygwin-3.8-1.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/cygwin/cygwin-3.4.2-1.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/popt/libpopt-common/libpopt-common-1.18-1.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/rebase/rebase-4.6.1-1.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/terminfo/terminfo-6.3-1.20220416.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/terminfo-extra/terminfo-extra-6.3-1.20220416.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/tzdata/tzdata-2022g-1.tar.xz
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zlib/zlib0/zlib0-1.2.13-1.tar.zst
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2022/12/17 17:19:08 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/run/run-1.3.4-2.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/mintty/mintty-3.6.2-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/login/login-1.13-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libtasn1/libtasn1_6/libtasn1_6-4.14-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libsigsegv/libsigsegv2/libsigsegv2-2.10-2.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libpipeline/libpipeline1/libpipeline1-1.5.6-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pcre2/libpcre2_8_0/libpcre2_8_0-10.41-1.tar.zst
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/liblzma5/liblzma5-5.2.9-1.tar.zst
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/lz4/liblz4_1/liblz4_1-1.9.4-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libiconv/libiconv2/libiconv2-1.17-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gmp/libgmp10/libgmp10-6.2.1-2.tar.zst
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gcc/libgcc1/libgcc1-11.3.0-1.tar.zst
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libffi/libffi6/libffi6-3.2.1-2.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.8-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libargp/libargp-20110921-3.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/editrights/editrights-1.03-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/dash/dash-0.5.11.5-1.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/libncursesw10/libncursesw10-6.3-1.20220416.tar.xz
+2022/12/17 17:19:09 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gettext/libintl8/libintl8-0.21.1-2.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gcc/libstdc++6/libstdc++6-11.3.0-1.tar.zst
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/mpfr/libmpfr6/libmpfr6-4.1.1-1.tar.zst
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/file/file-5.41-2.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/getent/getent-2.18.90-4.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/_autorebase/_autorebase-001091-1.tar.zst
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/vim/vim-minimal/vim-minimal-8.2.4372-1.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/ncurses-6.3-1.20220416.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/readline/libreadline7/libreadline7-8.2-2.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/less/less-590-1.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/sed/sed-4.9-1.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.33.1-2.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.33.1-2.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/popt/libpopt0/libpopt0-1.18-1.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/p11-kit/libp11-kit0/libp11-kit0-0.23.20-1.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gdbm/libgdbm6/libgdbm6-1.18.1-1.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/attr/libattr1/libattr1-2.4.48-2.tar.xz
+2022/12/17 17:19:10 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/texinfo/info/info-6.8-2.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/diffutils/diffutils-3.8-1.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.33.1-2.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/cygutils/cygutils-1.4.17-1.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-trust/p11-kit-trust-0.23.20-1.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-0.23.20-1.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/coreutils/coreutils-9.0-1.tar.xz
+2022/12/17 17:19:11 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bash/bash-4.4.12-3.tar.xz
+2022/12/17 17:19:12 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/tzcode/tzcode-2022g-1.tar.xz
+2022/12/17 17:19:12 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libfdisk1/libfdisk1-2.33.1-2.tar.xz
+2022/12/17 17:19:12 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zstd/zstd-1.5.2-1.tar.zst
+2022/12/17 17:19:12 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/xz-5.2.9-1.tar.zst
+2022/12/17 17:19:12 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gzip/gzip-1.12-1.tar.xz
+2022/12/17 17:19:13 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/groff/groff-1.22.4-1.tar.xz
+2022/12/17 17:19:13 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/grep/grep-3.8-2.tar.xz
+2022/12/17 17:19:13 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gawk/gawk-5.2.1-1.tar.xz
+2022/12/17 17:19:13 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/findutils/findutils-4.9.0-1.tar.xz
+2022/12/17 17:19:13 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/crypto-policies/crypto-policies-20190218-1.tar.xz
+2022/12/17 17:19:14 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/ca-certificates/ca-certificates-2022.2.54-3.tar.zst
+2022/12/17 17:19:14 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/bzip2-1.0.8-1.tar.xz
+2022/12/17 17:19:14 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/util-linux-2.33.1-2.tar.xz
+2022/12/17 17:19:14 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/base-files/base-files-4.3-3.tar.zst
+2022/12/17 17:19:14 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openssl/libssl1.1/libssl1.1-1.1.1s-1.tar.zst
+2022/12/17 17:19:15 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/tar/tar-1.34-1.tar.zst
+2022/12/17 17:19:15 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/man-db/man-db-2.11.1-1.tar.zst
+2022/12/17 17:19:15 Downloaded E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openssl/openssl-1.1.1s-1.tar.zst
+2022/12/17 17:19:15 Registry value set: HKEY_LOCAL_MACHINE\Software\Cygwin\setup\rootdir = "E:\G"
+2022/12/17 17:19:15 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/base-cygwin/base-cygwin-3.8-1.tar.xz
+2022/12/17 17:19:15 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/cygwin/cygwin-3.4.2-1.tar.xz
+2022/12/17 17:19:16 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/popt/libpopt-common/libpopt-common-1.18-1.tar.xz
+2022/12/17 17:19:16 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/rebase/rebase-4.6.1-1.tar.xz
+2022/12/17 17:19:18 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/terminfo/terminfo-6.3-1.20220416.tar.xz
+2022/12/17 17:19:19 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/terminfo-extra/terminfo-extra-6.3-1.20220416.tar.xz
+2022/12/17 17:19:27 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/tzdata/tzdata-2022g-1.tar.xz
+2022/12/17 17:19:32 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zlib/zlib0/zlib0-1.2.13-1.tar.zst
+2022/12/17 17:19:32 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/which/which-2.20-2.tar.bz2
+2022/12/17 17:19:32 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/run/run-1.3.4-2.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/mintty/mintty-3.6.2-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/login/login-1.13-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libtasn1/libtasn1_6/libtasn1_6-4.14-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libsigsegv/libsigsegv2/libsigsegv2-2.10-2.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libpipeline/libpipeline1/libpipeline1-1.5.6-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pcre2/libpcre2_8_0/libpcre2_8_0-10.41-1.tar.zst
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/liblzma5/liblzma5-5.2.9-1.tar.zst
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/lz4/liblz4_1/liblz4_1-1.9.4-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libiconv/libiconv2/libiconv2-1.17-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gmp/libgmp10/libgmp10-6.2.1-2.tar.zst
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gcc/libgcc1/libgcc1-11.3.0-1.tar.zst
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libffi/libffi6/libffi6-3.2.1-2.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/libbz2_1/libbz2_1-1.0.8-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libargp/libargp-20110921-3.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ipc-utils/ipc-utils-1.0-2.tar.bz2
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/hostname/hostname-3.13-1.tar.bz2
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/editrights/editrights-1.03-1.tar.xz
+2022/12/17 17:19:33 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/dash/dash-0.5.11.5-1.tar.xz
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/libncursesw10/libncursesw10-6.3-1.20220416.tar.xz
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gettext/libintl8/libintl8-0.21.1-2.tar.xz
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gcc/libstdc++6/libstdc++6-11.3.0-1.tar.zst
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/mpfr/libmpfr6/libmpfr6-4.1.1-1.tar.zst
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/file/file-5.41-2.tar.xz
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/getent/getent-2.18.90-4.tar.xz
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/_autorebase/_autorebase-001091-1.tar.zst
+2022/12/17 17:19:34 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/vim/vim-minimal/vim-minimal-8.2.4372-1.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/ncurses-6.3-1.20220416.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/readline/libreadline7/libreadline7-8.2-2.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/less/less-590-1.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/sed/sed-4.9-1.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libuuid1/libuuid1-2.33.1-2.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libsmartcols1/libsmartcols1-2.33.1-2.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/popt/libpopt0/libpopt0-1.18-1.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/p11-kit/libp11-kit0/libp11-kit0-0.23.20-1.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gdbm/libgdbm6/libgdbm6-1.18.1-1.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/attr/libattr1/libattr1-2.4.48-2.tar.xz
+2022/12/17 17:19:35 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/texinfo/info/info-6.8-2.tar.xz
+2022/12/17 17:19:36 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/diffutils/diffutils-3.8-1.tar.xz
+2022/12/17 17:19:36 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/alternatives/alternatives-1.3.30c-10.tar.bz2
+2022/12/17 17:19:37 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libblkid1/libblkid1-2.33.1-2.tar.xz
+2022/12/17 17:19:37 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/cygutils/cygutils-1.4.17-1.tar.xz
+2022/12/17 17:19:37 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-trust/p11-kit-trust-0.23.20-1.tar.xz
+2022/12/17 17:19:37 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/p11-kit/p11-kit-0.23.20-1.tar.xz
+2022/12/17 17:19:37 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/coreutils/coreutils-9.0-1.tar.xz
+2022/12/17 17:19:39 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bash/bash-4.4.12-3.tar.xz
+2022/12/17 17:19:40 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/tzcode/tzcode-2022g-1.tar.xz
+2022/12/17 17:19:40 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/libfdisk1/libfdisk1-2.33.1-2.tar.xz
+2022/12/17 17:19:40 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zstd/zstd-1.5.2-1.tar.zst
+2022/12/17 17:19:40 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/xz-5.2.9-1.tar.zst
+2022/12/17 17:19:41 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gzip/gzip-1.12-1.tar.xz
+2022/12/17 17:19:41 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/groff/groff-1.22.4-1.tar.xz
+2022/12/17 17:19:44 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/grep/grep-3.8-2.tar.xz
+2022/12/17 17:19:44 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gawk/gawk-5.2.1-1.tar.xz
+2022/12/17 17:19:45 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/findutils/findutils-4.9.0-1.tar.xz
+2022/12/17 17:19:45 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/crypto-policies/crypto-policies-20190218-1.tar.xz
+2022/12/17 17:19:45 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/ca-certificates/ca-certificates-2022.2.54-3.tar.zst
+2022/12/17 17:19:45 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/bzip2-1.0.8-1.tar.xz
+2022/12/17 17:19:46 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/util-linux/util-linux-2.33.1-2.tar.xz
+2022/12/17 17:19:46 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/base-files/base-files-4.3-3.tar.zst
+2022/12/17 17:19:47 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openssl/libssl1.1/libssl1.1-1.1.1s-1.tar.zst
+2022/12/17 17:19:47 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/tar/tar-1.34-1.tar.zst
+2022/12/17 17:19:47 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/man-db/man-db-2.11.1-1.tar.zst
+2022/12/17 17:19:48 Extracting from file://E:\G/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openssl/openssl-1.1.1s-1.tar.zst
+2022/12/17 17:19:49 Changing gid back to original
+2022/12/17 17:19:49 running: E:\G\bin\dash.exe "/etc/postinstall/0p_000_autorebase.dash"
+2022/12/17 17:19:51 running: E:\G\bin\dash.exe "/etc/postinstall/0p_update-info-dir.dash"
+2022/12/17 17:19:52 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/000-cygwin-post-install.sh"
+2022/12/17 17:19:53 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/coreutils.sh"
+2022/12/17 17:19:53 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/bash.sh"
+2022/12/17 17:19:53 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-mketc.sh"
+2022/12/17 17:19:54 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/base-files-profile.sh"
+2022/12/17 17:19:55 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/p11-kit.sh"
+2022/12/17 17:19:55 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/ca-certificates.sh"
+2022/12/17 17:20:03 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/crypto-policies.sh"
+2022/12/17 17:20:07 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/openssl.sh"
+2022/12/17 17:20:07 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/man-db.sh"
+2022/12/17 17:20:07 running: E:\G\bin\bash.exe --norc --noprofile "/etc/postinstall/mintty.sh"
+2022/12/17 17:20:08 running: E:\G\bin\dash.exe "/etc/postinstall/zp_man-db-update-index.dash"
+2022/12/17 17:20:08 Changing gid to Administrators
+2022/12/17 17:20:10 note: Installation Complete
+2022/12/17 17:20:10 Ending cygwin install
+2022/12/17 17:22:02 Starting cygwin install, version 2.924
+2022/12/17 17:22:02 User has backup/restore rights
+2022/12/17 17:22:02 User has symlink creation right
+2022/12/17 17:22:02 io_stream_cygfile: fopen(/etc/setup/setup.rc) failed 2 No such file or directory
+2022/12/17 17:22:02 Current Directory: E:\0ther
+2022/12/17 17:22:04 source: network install
+2022/12/17 17:22:09 root: E:\G\sys system
+2022/12/17 17:22:16 Selected local directory: E:\G\sys
+2022/12/17 17:22:17 net: Preconfig
+2022/12/17 17:22:21 site: https://mirrors.163.com/cygwin/
+2022/12/17 17:22:23 solving: 0 tasks, update: yes, use test packages: no
+2022/12/17 17:23:37 solving: 12 tasks, update: no, use test packages: no
+2022/12/17 17:23:37 Augmented Transaction List:
+2022/12/17 17:23:37    0 install libbz2-devel            1.0.6-3        
+2022/12/17 17:23:37    1 install libbz2-devel-src        1.0.6-3        
+2022/12/17 17:23:37    2 install libcurl-devel-src       7.86.0-1       
+2022/12/17 17:23:37    3 install liblzma-devel-src       5.2.8-1        
+2022/12/17 17:23:37    4 install libncurses-devel-src    6.1-1.20190727 
+2022/12/17 17:23:37    5 install python3-src             3.8.6-1        
+2022/12/17 17:23:37    6 install zlib-devel-src          1.2.12-1       
+2022/12/17 17:23:37    7 install libpkgconf4             1.9.3-1        
+2022/12/17 17:23:37    8 install libncurses++w10         6.3-1.20220416 
+2022/12/17 17:23:37    9 install binutils                2.39-1         
+2022/12/17 17:23:37   10 install libcrypt2               4.4.20-1       
+2022/12/17 17:23:37   11 install libexpat1               2.4.1-1        
+2022/12/17 17:23:37   12 install libgdbm_compat4         1.18.1-1       
+2022/12/17 17:23:37   13 install libsqlite3_0            3.34.0-1       
+2022/12/17 17:23:37   14 install libdb5.3                5.3.28-2       
+2022/12/17 17:23:37   15 install libntlm0                1.4-1          
+2022/12/17 17:23:37   16 install libidn2_0               2.3.4-1        
+2022/12/17 17:23:37   17 install libnghttp2_14           1.51.0-1       
+2022/12/17 17:23:37   18 install libunistring5           1.1-1          
+2022/12/17 17:23:37   19 install libssh2_1               1.10.0-1       
+2022/12/17 17:23:37   20 install libzstd1                1.5.2-1        
+2022/12/17 17:23:37   21 install libbrotlicommon1        1.0.9-2        
+2022/12/17 17:23:37   22 install publicsuffix-list-dafsa 20221115-1     
+2022/12/17 17:23:37   23 install libcom_err2             1.44.5-1       
+2022/12/17 17:23:37   24 install libkrb5support0         1.15.2-2       
+2022/12/17 17:23:37   25 install libgsasl-common         2.2.0-2        
+2022/12/17 17:23:37   26 install libidn12                1.41-1         
+2022/12/17 17:23:37   27 install libgpg-error0           1.37-1         
+2022/12/17 17:23:37   28 install pkgconf                 1.9.3-1        
+2022/12/17 17:23:37   29 install perl_base               5.32.1-2       
+2022/12/17 17:23:37   30 install perl_autorebase         5.32.1-2       
+2022/12/17 17:23:37   31 install python38                3.8.12-1       
+2022/12/17 17:23:37   32 install python38-setuptools     59.5.0-1       
+2022/12/17 17:23:37   33 install python38-pip            21.3.1-3       
+2022/12/17 17:23:37   34 install libbrotlidec1           1.0.9-2        
+2022/12/17 17:23:37   35 install libpsl5                 0.21.1-2       
+2022/12/17 17:23:37   36 install libk5crypto3            1.15.2-2       
+2022/12/17 17:23:37   37 install libgcrypt20             1.10.1-1       
+2022/12/17 17:23:37   38 install pkg-config              1.9.3-1        
+2022/12/17 17:23:37   39 install perl-HTML-Tagset        3.20-8         
+2022/12/17 17:23:37   40 install perl-Clone              0.46-1         
+2022/12/17 17:23:37   41 install perl-IO-HTML            1.004-2        
+2022/12/17 17:23:37   42 install perl-TimeDate           2.33-2         
+2022/12/17 17:23:37   43 install perl                    5.32.1-2       
+2022/12/17 17:23:37   44 install perl-Encode-Locale      1.05-4         
+2022/12/17 17:23:37   45 install perl-LWP-MediaTypes     6.04-3         
+2022/12/17 17:23:37   46 install python3                 3.8.6-1        
+2022/12/17 17:23:37   47 install libkrb5_3               1.15.2-2       
+2022/12/17 17:23:37   48 install zlib-devel              1.2.12-1       
+2022/12/17 17:23:37   49 install libncurses-devel        6.1-1.20190727 
+2022/12/17 17:23:37   50 install liblzma-devel           5.2.8-1        
+2022/12/17 17:23:37   51 install perl-HTTP-Date          6.05-2         
+2022/12/17 17:23:37   52 install perl-Try-Tiny           0.31-1         
+2022/12/17 17:23:37   53 install perl-URI                5.17-1         
+2022/12/17 17:23:37   54 install libgssapi_krb5_2        1.15.2-2       
+2022/12/17 17:23:37   55 install perl-File-Listing       6.15-1         
+2022/12/17 17:23:37   56 install perl-Net-HTTP           6.22-1         
+2022/12/17 17:23:37   57 install perl-HTTP-Message       6.44-1         
+2022/12/17 17:23:37   58 install perl-WWW-RobotRules     6.02-8         
+2022/12/17 17:23:37   59 install libsasl2_3              2.1.27-1       
+2022/12/17 17:23:37   60 install libgsasl18              2.2.0-2        
+2022/12/17 17:23:37   61 install perl-HTML-Parser        3.80-1         
+2022/12/17 17:23:37   62 install perl-HTTP-Cookies       6.10-2         
+2022/12/17 17:23:37   63 install perl-HTTP-Negotiate     6.01-8         
+2022/12/17 17:23:37   64 install libopenldap2            2.6.3-1        
+2022/12/17 17:23:37   65 install perl-libwww-perl        6.67-1         
+2022/12/17 17:23:37   66 install libopenldap2_4_2        2.6.3-1        
+2022/12/17 17:23:37   67 install libcurl4                7.86.0-2       
+2022/12/17 17:23:37   68 install libcurl-devel           7.86.0-1       
+2022/12/17 17:23:39 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/libbz2-devel/libbz2-devel-1.0.6-3.tar.xz
+2022/12/17 17:23:40 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/bzip2-1.0.6-3-src.tar.xz
+2022/12/17 17:23:40 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/curl/curl-7.86.0-1-src.tar.xz
+2022/12/17 17:23:40 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/xz-5.2.8-1-src.tar.zst
+2022/12/17 17:23:41 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/ncurses-6.1-1.20190727-src.tar.xz
+2022/12/17 17:23:42 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/python3/python3-3.8.6-1-src.tar.xz
+2022/12/17 17:23:42 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zlib/zlib-1.2.12-1-src.tar.zst
+2022/12/17 17:23:42 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pkgconf/libpkgconf4/libpkgconf4-1.9.3-1.tar.zst
+2022/12/17 17:23:42 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/libncurses++w10/libncurses++w10-6.3-1.20220416.tar.xz
+2022/12/17 17:23:44 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/binutils/binutils-2.39-1.tar.zst
+2022/12/17 17:23:44 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libxcrypt/libcrypt2/libcrypt2-4.4.20-1.tar.xz
+2022/12/17 17:23:44 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/expat/libexpat1/libexpat1-2.4.1-1.tar.xz
+2022/12/17 17:23:44 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gdbm/libgdbm_compat4/libgdbm_compat4-1.18.1-1.tar.xz
+2022/12/17 17:23:44 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/sqlite3/libsqlite3_0/libsqlite3_0-3.34.0-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/db/libdb5.3/libdb5.3-5.3.28-2.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libntlm/libntlm0/libntlm0-1.4-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libidn2/libidn2_0/libidn2_0-2.3.4-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/nghttp2/libnghttp2_14/libnghttp2_14-1.51.0-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libunistring/libunistring5/libunistring5-1.1-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libssh2/libssh2_1/libssh2_1-1.10.0-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zstd/libzstd1/libzstd1-1.5.2-1.tar.zst
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/brotli/libbrotlicommon1/libbrotlicommon1-1.0.9-2.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/publicsuffix-list/publicsuffix-list-dafsa/publicsuffix-list-dafsa-20221115-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/e2fsprogs/libcom_err2/libcom_err2-1.44.5-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libkrb5support0/libkrb5support0-1.15.2-2.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gsasl/libgsasl-common/libgsasl-common-2.2.0-2.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libidn/libidn12/libidn12-1.41-1.tar.xz
+2022/12/17 17:23:45 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libgpg-error/libgpg-error0/libgpg-error0-1.37-1.tar.xz
+2022/12/17 17:23:46 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pkgconf/pkgconf-1.9.3-1.tar.zst
+2022/12/17 17:23:46 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl/perl_base/perl_base-5.32.1-2.tar.zst
+2022/12/17 17:23:46 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl/perl_autorebase/perl_autorebase-5.32.1-2.tar.zst
+2022/12/17 17:23:48 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/python38/python38-3.8.12-1.tar.xz
+2022/12/17 17:23:48 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/python-setuptools/python38-setuptools/python38-setuptools-59.5.0-1.tar.xz
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/python-pip/python38-pip/python38-pip-21.3.1-3.tar.xz
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/brotli/libbrotlidec1/libbrotlidec1-1.0.9-2.tar.xz
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libpsl/libpsl5/libpsl5-0.21.1-2.tar.xz
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libk5crypto3/libk5crypto3-1.15.2-2.tar.xz
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libgcrypt/libgcrypt20/libgcrypt20-1.10.1-1.tar.xz
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pkgconf/pkg-config/pkg-config-1.9.3-1.tar.zst
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTML-Tagset/perl-HTML-Tagset-3.20-8.tar.zst
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl-Clone/perl-Clone-0.46-1.tar.zst
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-IO-HTML/perl-IO-HTML-1.004-2.tar.zst
+2022/12/17 17:23:49 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-TimeDate/perl-TimeDate-2.33-2.tar.zst
+2022/12/17 17:23:50 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl/perl-5.32.1-2.tar.zst
+2022/12/17 17:23:50 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-Encode-Locale/perl-Encode-Locale-1.05-4.tar.zst
+2022/12/17 17:23:50 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-LWP-MediaTypes/perl-LWP-MediaTypes-6.04-3.tar.zst
+2022/12/17 17:23:50 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/python3/python3-3.8.6-1.tar.xz
+2022/12/17 17:23:50 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libkrb5_3/libkrb5_3-1.15.2-2.tar.xz
+2022/12/17 17:23:50 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zlib/zlib-devel/zlib-devel-1.2.12-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/libncurses-devel/libncurses-devel-6.1-1.20190727.tar.xz
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/liblzma-devel/liblzma-devel-5.2.8-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Date/perl-HTTP-Date-6.05-2.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-Try-Tiny/perl-Try-Tiny-0.31-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-URI/perl-URI-5.17-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libgssapi_krb5_2/libgssapi_krb5_2-1.15.2-2.tar.xz
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-File-Listing/perl-File-Listing-6.15-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-Net-HTTP/perl-Net-HTTP-6.22-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Message/perl-HTTP-Message-6.44-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-WWW-RobotRules/perl-WWW-RobotRules-6.02-8.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/cyrus-sasl/libsasl2_3/libsasl2_3-2.1.27-1.tar.xz
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gsasl/libgsasl18/libgsasl18-2.2.0-2.tar.xz
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl-HTML-Parser/perl-HTML-Parser-3.80-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Cookies/perl-HTTP-Cookies-6.10-2.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Negotiate/perl-HTTP-Negotiate-6.01-8.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openldap/libopenldap2/libopenldap2-2.6.3-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-libwww-perl/perl-libwww-perl-6.67-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openldap/libopenldap2_4_2/libopenldap2_4_2-2.6.3-1.tar.zst
+2022/12/17 17:23:51 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/curl/libcurl4/libcurl4-7.86.0-2.tar.xz
+2022/12/17 17:23:52 Downloaded E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/curl/libcurl-devel/libcurl-devel-7.86.0-1.tar.xz
+2022/12/17 17:23:52 Registry value set: HKEY_LOCAL_MACHINE\Software\Cygwin\setup\rootdir = "E:\G\sys"
+2022/12/17 17:23:52 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/libbz2-devel/libbz2-devel-1.0.6-3.tar.xz
+2022/12/17 17:23:52 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pkgconf/libpkgconf4/libpkgconf4-1.9.3-1.tar.zst
+2022/12/17 17:23:52 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/libncurses++w10/libncurses++w10-6.3-1.20220416.tar.xz
+2022/12/17 17:23:52 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/binutils/binutils-2.39-1.tar.zst
+2022/12/17 17:23:53 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libxcrypt/libcrypt2/libcrypt2-4.4.20-1.tar.xz
+2022/12/17 17:23:53 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/expat/libexpat1/libexpat1-2.4.1-1.tar.xz
+2022/12/17 17:23:53 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gdbm/libgdbm_compat4/libgdbm_compat4-1.18.1-1.tar.xz
+2022/12/17 17:23:53 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/sqlite3/libsqlite3_0/libsqlite3_0-3.34.0-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/db/libdb5.3/libdb5.3-5.3.28-2.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libntlm/libntlm0/libntlm0-1.4-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libidn2/libidn2_0/libidn2_0-2.3.4-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/nghttp2/libnghttp2_14/libnghttp2_14-1.51.0-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libunistring/libunistring5/libunistring5-1.1-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libssh2/libssh2_1/libssh2_1-1.10.0-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zstd/libzstd1/libzstd1-1.5.2-1.tar.zst
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/brotli/libbrotlicommon1/libbrotlicommon1-1.0.9-2.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/publicsuffix-list/publicsuffix-list-dafsa/publicsuffix-list-dafsa-20221115-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/e2fsprogs/libcom_err2/libcom_err2-1.44.5-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libkrb5support0/libkrb5support0-1.15.2-2.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gsasl/libgsasl-common/libgsasl-common-2.2.0-2.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libidn/libidn12/libidn12-1.41-1.tar.xz
+2022/12/17 17:23:54 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libgpg-error/libgpg-error0/libgpg-error0-1.37-1.tar.xz
+2022/12/17 17:23:55 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pkgconf/pkgconf-1.9.3-1.tar.zst
+2022/12/17 17:23:55 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl/perl_base/perl_base-5.32.1-2.tar.zst
+2022/12/17 17:23:56 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl/perl_autorebase/perl_autorebase-5.32.1-2.tar.zst
+2022/12/17 17:23:56 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/python38/python38-3.8.12-1.tar.xz
+2022/12/17 17:24:06 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/python-setuptools/python38-setuptools/python38-setuptools-59.5.0-1.tar.xz
+2022/12/17 17:24:08 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/python-pip/python38-pip/python38-pip-21.3.1-3.tar.xz
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/brotli/libbrotlidec1/libbrotlidec1-1.0.9-2.tar.xz
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libpsl/libpsl5/libpsl5-0.21.1-2.tar.xz
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libk5crypto3/libk5crypto3-1.15.2-2.tar.xz
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/libgcrypt/libgcrypt20/libgcrypt20-1.10.1-1.tar.xz
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/pkgconf/pkg-config/pkg-config-1.9.3-1.tar.zst
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTML-Tagset/perl-HTML-Tagset-3.20-8.tar.zst
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl-Clone/perl-Clone-0.46-1.tar.zst
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-IO-HTML/perl-IO-HTML-1.004-2.tar.zst
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-TimeDate/perl-TimeDate-2.33-2.tar.zst
+2022/12/17 17:24:15 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl/perl-5.32.1-2.tar.zst
+2022/12/17 17:24:20 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-Encode-Locale/perl-Encode-Locale-1.05-4.tar.zst
+2022/12/17 17:24:20 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-LWP-MediaTypes/perl-LWP-MediaTypes-6.04-3.tar.zst
+2022/12/17 17:24:20 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/python3/python3-3.8.6-1.tar.xz
+2022/12/17 17:24:20 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libkrb5_3/libkrb5_3-1.15.2-2.tar.xz
+2022/12/17 17:24:20 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zlib/zlib-devel/zlib-devel-1.2.12-1.tar.zst
+2022/12/17 17:24:20 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/libncurses-devel/libncurses-devel-6.1-1.20190727.tar.xz
+2022/12/17 17:24:23 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/liblzma-devel/liblzma-devel-5.2.8-1.tar.zst
+2022/12/17 17:24:23 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Date/perl-HTTP-Date-6.05-2.tar.zst
+2022/12/17 17:24:23 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-Try-Tiny/perl-Try-Tiny-0.31-1.tar.zst
+2022/12/17 17:24:23 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-URI/perl-URI-5.17-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/krb5/libgssapi_krb5_2/libgssapi_krb5_2-1.15.2-2.tar.xz
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-File-Listing/perl-File-Listing-6.15-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-Net-HTTP/perl-Net-HTTP-6.22-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Message/perl-HTTP-Message-6.44-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-WWW-RobotRules/perl-WWW-RobotRules-6.02-8.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/cyrus-sasl/libsasl2_3/libsasl2_3-2.1.27-1.tar.xz
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/gsasl/libgsasl18/libgsasl18-2.2.0-2.tar.xz
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/perl-HTML-Parser/perl-HTML-Parser-3.80-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Cookies/perl-HTTP-Cookies-6.10-2.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-HTTP-Negotiate/perl-HTTP-Negotiate-6.01-8.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openldap/libopenldap2/libopenldap2-2.6.3-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/noarch/release/perl-libwww-perl/perl-libwww-perl-6.67-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/openldap/libopenldap2_4_2/libopenldap2_4_2-2.6.3-1.tar.zst
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/curl/libcurl4/libcurl4-7.86.0-2.tar.xz
+2022/12/17 17:24:24 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/curl/libcurl-devel/libcurl-devel-7.86.0-1.tar.xz
+2022/12/17 17:24:25 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/bzip2/bzip2-1.0.6-3-src.tar.xz
+2022/12/17 17:24:25 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/curl/curl-7.86.0-1-src.tar.xz
+2022/12/17 17:24:25 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/xz/xz-5.2.8-1-src.tar.zst
+2022/12/17 17:24:25 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/ncurses/ncurses-6.1-1.20190727-src.tar.xz
+2022/12/17 17:24:25 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/python3/python3-3.8.6-1-src.tar.xz
+2022/12/17 17:24:25 Extracting from file://E:\G\sys/https%3a%2f%2fmirrors.163.com%2fcygwin%2f/x86_64/release/zlib/zlib-1.2.12-1-src.tar.zst
+2022/12/17 17:24:25 Changing gid back to original
+2022/12/17 17:24:25 running: E:\G\sys\bin\dash.exe "/etc/postinstall/0p_000_autorebase.dash"
+2022/12/17 17:24:28 running: E:\G\sys\bin\dash.exe "/etc/postinstall/0p_update-info-dir.dash"
+2022/12/17 17:24:30 running: E:\G\sys\bin\bash.exe --norc --noprofile "/etc/postinstall/libsasl2_3.sh"
+2022/12/17 17:24:30 running: E:\G\sys\bin\bash.exe --norc --noprofile "/etc/postinstall/python38.sh"
+2022/12/17 17:24:30 running: E:\G\sys\bin\bash.exe --norc --noprofile "/etc/postinstall/python38-pip.sh"
+2022/12/17 17:24:31 running: E:\G\sys\bin\dash.exe "/etc/postinstall/zp_man-db-update-index.dash"
+2022/12/17 17:24:31 Changing gid to Administrators
+2022/12/17 17:24:33 note: Installation Complete
+2022/12/17 17:24:33 Ending cygwin install

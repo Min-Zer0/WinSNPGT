@@ -1,0 +1,55 @@
+# -*- mode: sh; sh-shell: bash -*-
+NAME="zlib"
+VERSION="1.2.12"
+RELEASE="1"
+CATEGORY="Libs"
+SUMMARY="gzip de/compression library"
+DESCRIPTION="zlib is designed to be a free, general-purpose, legally unencumbered
+-- that is, not covered by any patents -- lossless data- compression
+library for use on virtually any computer hardware and operating
+system. The zlib data format is itself portable across platforms."
+
+HOMEPAGE="https://www.zlib.net/"
+SRC_URI="https://www.zlib.net/${P}.tar.xz"
+PATCH_URI="
+  ${P}-gzopen_w.patch
+"
+
+PKG_NAMES="zlib zlib0 zlib-devel"
+zlib_SUMMARY="${SUMMARY} (documentation)"
+zlib_REQUIRES="zlib0"
+zlib_CONTENTS="usr/share/doc/ usr/share/man/"
+zlib0_SUMMARY="${SUMMARY} (runtime)"
+zlib0_CONTENTS="usr/bin/cygz.dll"
+zlib0_OBSOLETES="libminizip1"
+zlib_devel_SUMMARY="${SUMMARY} (development)"
+zlib_devel_CONTENTS="usr/include/z*.h usr/lib/libz.* usr/lib/pkgconfig/zlib.pc"
+zlib_devel_OBSOLETES="libminizip-devel"
+
+src_compile() {
+    lndirs
+    rm -f ${B}/Makefile ${B}/zconf.h
+
+    cd ${B}
+    ./configure
+    cygmake -j1 -f win32/Makefile.gcc \
+	    CC=${CC} AR=${AR} RC=${RC} STRIP=: \
+	    CFLAGS="${CFLAGS}" \
+	    SHAREDLIB=cygz.dll IMPLIB=libz.dll.a
+}
+
+src_install() {
+    cd ${B}
+    cyginstall -f win32/Makefile.gcc \
+	       SHAREDLIB=cygz.dll IMPLIB=libz.dll.a \
+	       SHARED_MODE=1 \
+	       prefix=/usr \
+	       BINARY_PATH=/usr/bin \
+	       INCLUDE_PATH=/usr/include \
+	       LIBRARY_PATH=/usr/lib
+
+    # pkg-config doesn't manage to skip this extra -L/usr/lib
+    sed -i -e 's| -L\${sharedlibdir} | |g' ${D}/usr/lib/pkgconfig/zlib.pc
+
+    doman ${S}/zlib.3
+}

@@ -1,0 +1,5 @@
+# Install this package as a pip3 alternative.
+PIP3_VERSION=3.8
+PIP3_PRIORITY=38
+/usr/sbin/alternatives --install /usr/bin/pip3 pip3  /usr/bin/pip3.8 38
+

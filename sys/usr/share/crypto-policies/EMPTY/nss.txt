@@ -1,0 +1,6 @@
+library=
+name=Policy
+NSS=flags=policyOnly,moduleDB
+config="disallow=ALL allow=tls-version-min=0:dtls-version-min=0:DH-MIN=0:DSA-MIN=0:RSA-MIN=0"
+
+

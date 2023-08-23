@@ -1,0 +1,144 @@
+#!/bin/bash
+
+umask 022
+
+: ${profile_dir=/usr/share/crypto-policies}
+: ${base_dir=/etc/crypto-policies}
+local_dir="$base_dir/local.d"
+backend_config_dir="$base_dir/back-ends"
+state_dir="$base_dir/state"
+errcode=0
+nocheck=0
+noreload=0
+profile=''
+
+while test $# -ge 1; do
+	case "$1" in
+		--set)
+			profile="$2"
+			shift
+			# If there is no argument to --set, this shift will be ignored
+			shift
+			;;
+		--no-check)
+			nocheck=1
+			shift
+			;;
+		--no-reload)
+			noreload=1
+			shift
+			;;
+		--show)
+			cat $base_dir/config|grep -v "^#"|sed '/^$/d'
+			exit 0
+			;;
+		--is-applied)
+			time1=$(stat -c %Y $state_dir/current)
+			time2=$(stat -c %Y $base_dir/config)
+			if test -z "$time1" || test -z "$time2";then
+				exit 77
+			fi
+			if test $time1 -ge $time2;then
+				echo "The configured policy is applied"
+				exit 0
+			else
+				echo "The configured policy is NOT applied"
+				exit 1
+			fi
+			;;
+		*)
+			echo "usage: $0 --set [POLICY]"
+			echo "usage: $0 --show"
+			echo "usage: $0 --is-applied"
+			echo "usage: $0"
+			exit 2
+			;;
+	esac
+done
+
+mkdir -p $backend_config_dir >/dev/null 2>&1
+mkdir -p $state_dir >/dev/null 2>&1
+
+set_config=0
+if test -z "$profile";then
+	profile=$(cat $base_dir/config|grep -v ^#)
+else
+	profile=$(echo -n $profile|tr '[:lower:]' '[:upper:]')
+	set_config=1
+	# FIPS profile is a special case
+	if test "$profile" = "FIPS" ; then
+		echo "Warning: Using 'update-crypto-policies --set FIPS' is not sufficient for" 1>&2
+		echo "         FIPS compliance." 1>&2
+		echo "         Use 'fips-mode-setup --enable' command instead." 1>&2
+	else
+		fips_enabled=$(cat /proc/sys/crypto/fips_enabled)
+		if test "$fips_enabled" = 1 ; then
+			echo "Warning: Using 'update-crypto-policies --set' in FIPS mode will make the system" 1>&2
+			echo "         non-compliant with FIPS." 1>&2
+			echo "         It can also break the ssh access to the system." 1>&2
+			echo "         Use 'fips-mode-setup --disable' to disable the system FIPS mode." 1>&2
+		fi
+	fi
+fi
+
+# remove any legacy profile options
+profile=$(echo -n $profile|sed -e 's/@F..//')
+
+if test -z "$profile";then
+	#try the OS-installed profile
+	profile=$(cat /usr/share/crypto-policies/default-config|grep -v ^#)
+	if test -z "$profile";then
+		echo "Couldn't read current profile"
+		exit 1
+	fi
+fi
+
+if ! test -d "$profile_dir/$profile";then
+	echo "Unknown profile: $profile"
+	exit 1
+fi
+
+echo "Setting system policy to $profile"
+for i in "$profile_dir/$profile/"*;do
+	basefile=$(basename "$i")
+	file=$(echo -n "$basefile"|sed 's/\.txt/\.config/')
+	basefile=$(echo -n "$basefile"|sed 's/\.txt//')
+	matches=$(ls "$local_dir/$basefile"-*.config 2>/dev/null)
+
+	if test -z "$matches"; then
+		rm -f "$backend_config_dir/$file"
+		ln -sf $i "$backend_config_dir/$file"
+		if test $? != 0;then
+			echo "Failed updating policies, are you root?"
+			exit 1
+		fi
+	else
+		rm -f "$backend_config_dir/$file"
+		cat $i > "$backend_config_dir/$file"
+		if test $? != 0;then
+			echo "Failed updating policies, are you root?"
+			exit 1
+		fi
+
+		cat $local_dir/$basefile-*.config >> "$backend_config_dir/$file"
+	fi
+done
+
+echo $profile > $state_dir/current
+
+if test $set_config = 1;then
+	echo $profile > $base_dir/config
+fi
+
+if ! test $noreload = 1; then
+	. $profile_dir/reload-cmds.sh
+fi
+
+echo "Note: System-wide crypto policies are applied on application start-up."
+echo "It is recommended to restart the system for the change of policies"
+echo "to fully take place."
+
+# Old versions seemed to install that file. We no longer use it
+rm -f $base_dir/current
+
+exit $errcode

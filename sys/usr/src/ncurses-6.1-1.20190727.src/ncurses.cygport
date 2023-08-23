@@ -1,0 +1,136 @@
+NAME="ncurses"
+VERSION=6.1
+RELEASE=1.20190727
+CATEGORY="Libs"
+SUMMARY="Terminal display library"
+DESCRIPTION="Ncurses (new curses) started as a freely distributable clone of
+SVr4 curses. It has outgrown the clone description, and now contains many
+features which are not in SVr4 curses. Curses is a pun on the term <<cursor
+optimization>>. It is a library of functions that manage an application's
+display on character-cell terminals (e.g., VT100)."
+HOMEPAGE="http://invisible-island.net/ncurses/"
+SRC_URI="ftp://ftp.invisible-island.net/ncurses/current/ncurses-${VERSION}-${RELEASE#*.}.tgz"
+SRC_DIR="ncurses-${VERSION}-${RELEASE#*.}"
+PATCH_URI+="
+	https://src.fedoraproject.org/rpms/ncurses/raw/master/f/ncurses-config.patch
+	https://src.fedoraproject.org/rpms/ncurses/raw/master/f/ncurses-urxvt.patch
+	https://src.fedoraproject.org/rpms/ncurses/raw/master/f/ncurses-kbs.patch
+	6.0-abi-version.patch
+"
+
+PKG_NAMES="ncurses ncurses-demo libncursesw10 libncurses++w10 libncurses-devel terminfo terminfo-extra"
+ncurses_CATEGORY="Base"
+ncurses_SUMMARY=${SUMMARY/library/utilities}
+ncurses_OBSOLETES="ncursesw"
+ncurses_CONTENTS="
+	--exclude=*.dll --exclude=*-config*
+	usr/bin/*
+	usr/share/doc/${NAME}
+	usr/share/man/man1/*
+"
+ncurses_demo_CATEGORY="Utils"
+ncurses_demo_SUMMARY=${SUMMARY/library/demos}
+ncurses_demo_OBSOLETES="ncursesw-demo"
+ncurses_demo_CONTENTS="usr/lib/ncurses/test/"
+libncursesw10_REQUIRES="terminfo"
+libncursesw10_CONTENTS="
+	usr/bin/cygformw-10.dll
+	usr/bin/cygmenuw-10.dll
+	usr/bin/cygncursesw-10.dll
+	usr/bin/cygpanelw-10.dll
+	usr/bin/cygticw-10.dll
+"
+libncurses__w10_CONTENTS="
+	usr/bin/cygncurses++w-10.dll
+"
+libncurses_devel_OBSOLETES="libncursesw-devel"
+libncurses_devel_CONTENTS="
+	usr/bin/ncurses*6-config
+	usr/include/
+	usr/lib/lib*
+	usr/lib/pkgconfig/
+	usr/share/man/man1/ncurses*6-config.*
+	usr/share/man/man3/
+"
+terminfo_CATEGORY="Base"
+terminfo_SUMMARY="Terminal capability database"
+terminfo_CONTENTS="usr/lib/terminfo usr/share/man/man[57]/ usr/share/tabset/"
+for term in ansi dumb linux vt100 vt100-nav vt102 vt220 vt52 \
+    Eterm\* aterm bterm cons25 cygwin eterm\* gnome gnome-256color hurd jfbterm \
+    konsole konsole-256color mach\* mlterm mrxvt nsterm putty{,-\*} pcansi \
+    rxvt{,-\*} screen{,-\*color,.\*} st{,-\*} sun teraterm teraterm2.3 \
+    tmux{,-\*} vte vte-256color vwmterm wsvt25\* xfce xterm xterm-\*
+do
+	terminfo_CONTENTS+=" usr/share/terminfo/*/$term"
+	terminfo_extra_CONTENTS+=" --exclude=$term"
+done
+terminfo_extra_SUMMARY="${terminfo_SUMMARY} (additional entries)"
+terminfo_extra_REQUIRES="terminfo"
+terminfo_extra_CONTENTS+=" usr/share/terminfo/"
+
+src_compile() {
+	cd ${B}
+	cygconf --with-libtool=/usr/bin/$(cross_compiling && echo -n ${ARCH}-pc-cygwin-)libtool \
+		--with-build-cflags=-D_XOPEN_SOURCE_EXTENDED \
+		--with-pkg-config-libdir=/usr/lib/pkgconfig \
+		--with-install-prefix=${D} \
+		--without-debug --disable-relink --disable-rpath \
+		--with-ticlib --without-termlib --enable-widec --enable-ext-colors \
+		--enable-ext-mouse --enable-sp-funcs --enable-reentrant \
+		--with-abi-version=10 --enable-lp64 --with-wrap-prefix=ncwrap_ \
+		--enable-sigwinch --enable-colorfgbg --enable-tcap-names \
+		--disable-termcap --disable-mixed-case --enable-symlinks \
+		--with-pkg-config --enable-pc-files \
+		--with-manpage-format=normal --with-manpage-aliases \
+		--with-default-terminfo-dir=/usr/share/terminfo \
+		--enable-echo
+
+	sed -i -e 's%^\(LIBRARIES[ \t]*=\).*$%\1 ../lib/libncursesw.la ../lib/libticw.la%' ncurses/Makefile
+	make
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	exeinto /usr/lib/ncurses/test
+	doexe test/*.exe
+
+	# termcap
+#	dodir /etc
+#	./progs/tic -C -t -r ${S}/misc/terminfo.src > ${D}/etc/termcap
+
+	dodir /usr/include/ncurses{,w}
+	pushd ${D}/usr/include/ncurses
+	ln -s ../*.h .
+	popd
+	pushd ${D}/usr/include/ncursesw
+	ln -s ../*.h .
+	popd
+
+	pushd ${D}/usr/lib
+	sed -i -e "s| -L[^ '\"]*| |g;s|${D}||g" *.la
+	for l in lib*a
+	do
+		ln -s ${l} ${l/w/}
+	done
+	dosym libncursesw.a /usr/lib/libcurses.a
+	dosym libncursesw.dll.a /usr/lib/libcurses.dll.a
+	popd
+
+	pushd ${D}/usr/lib/pkgconfig
+	for f in *.pc
+	do
+		ln -s ${f} ${f/w/}
+	done
+
+	pushd ${D}/usr/bin
+	mv ncursesw10-config ncursesw6-config
+	sed -i -e 's|echo "10"|echo "6"|' ncurses*6-config
+	dosym ncursesw6-config /usr/bin/ncurses6-config
+	popd
+	pushd ${D}/usr/share/man/man1
+	mv ncursesw10-config.1 ncursesw6-config.1
+	dosym ncursesw6-config.1 /usr/share/man/man1/ncurses6-config.1
+	popd
+}

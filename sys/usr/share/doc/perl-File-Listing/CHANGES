@@ -1,0 +1,69 @@
+Revision history for File-Listing
+
+6.15      2022-04-17 04:09:58 -0600
+  - Main git repository has now been detached from the original
+    repository (originally it was a fork).  The old repository
+    can be found at https://github.com/gisle/file-listing
+  - Adjust test suite to handle systems that cannot handle
+    year 2038+ dates (gh#24)
+
+6.14      2020-11-30 05:48:07 -0700
+  - Production version identical to 6.12_01
+
+6.12_01   2020-11-27 16:13:15 -0700
+  - Handle default apache indexes (gh#20)
+  - Ignore certain known navigation links in apache indexes (gh#20)
+  - Support Win32 OpenSSH listing (gh#21 simon04++)
+
+6.11      2020-10-06 03:00:45 -0600
+  - Remove accidental recursive req on LWP::Simple
+
+6.10      2020-10-05 15:18:30 -0600
+  - Production version identical to 6.09_01
+
+6.09_01   2020-10-05 08:17:32 -0600
+  - Remove TABs from source files and tests (gh#17)
+  - Restores (theoretical, untested) support for 5.6, which was removed when
+    the tests added modern file tests (gh#17)
+  - Fixes or silences several minor nits reported by PerlCritic (gh#17)
+
+6.08_01 2020-10-01 17:28:35 -0600
+  - We now only call Time::Local::timelocal with four digit years (gh#5, gh#14)
+
+6.07 2020-09-30 08:47:18 -0600
+  - Production version identical to 6.06_01
+
+6.06_01 2020-09-30 06:34:08 -0600
+  - Add examples to documentation.
+
+6.05_01 2020-09-29 21:25:35 -0600
+  - New maintainer (Graham Ollis / plicease)
+  - New GitHub repository https://github.com/PerlAlien/File-Listing
+  - Include Perl core modules in prereqs (rt#85100 / gh#2)
+  - Converted Changes file to standard format (the original
+    Changes file is available as Changes.original)
+  - Migrate Test.pm tests to use Test::More, all tests
+    use strict and warnings now.
+
+6.04 2012-02-15
+  - Minor mistake in module description (Erik Esterer)
+  - Test parsing of dosftp listing (Gisle Aas)
+  - This module works with 5.6.2 (Peter Rabbitson)
+
+6.03 2011-09-20
+  - Minor mistake in module description (Erik Esterer)
+  - Fixes to the parsing of 'ls -l' file modes (rt#71054, Peter John Acklam)
+
+6.02 2011-03-20
+  - Avoid running live test.  Embed the expected test data in  the test file.
+    Update the test data inline by invoking 'perl t/apache.t --update'.
+
+6.01 2011-03-13
+  - Added legal notice and updated the meta repository link
+
+6.00 2011-02-25
+  - Initial release of File-Listing as a separate  distribution.  The File::Listing
+    module used to be bundled with the libwww-perl distribution.
+
+  - Since libwww-perl-5.837 File::Listing has been made able to deal with listings
+    full of table markup (like what we find at http://www.cpan.org/modules/by-module/).

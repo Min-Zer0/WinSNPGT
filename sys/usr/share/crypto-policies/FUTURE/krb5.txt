@@ -1,0 +1,3 @@
+[libdefaults]
+permitted_enctypes = aes256-cts-hmac-sha1-96 aes256-cts-hmac-sha384-192 camellia256-cts-cmac
+pkinit_dh_min_bits=4096

@@ -1,0 +1,23 @@
+# -*- mode: sh; sh-shell: bash -*-
+NAME="xz"
+VERSION="5.2.8"
+RELEASE="1"
+CATEGORY="Archive"
+SUMMARY="LZMA de/compressor"
+DESCRIPTION="XZ Utils is free general-purpose data compression software with
+high compression ratio. XZ Utils are the successor to LZMA Utils."
+HOMEPAGE="https://tukaani.org/${PN}/"
+LICENSE="GPL-2.0-or-later AND LGPL-2.1-or-later"
+SRC_URI="
+  https://tukaani.org/${PN}/${P}.tar.zst
+  https://tukaani.org/${PN}/${P}.tar.zst.sig
+"
+
+PKG_NAMES="xz liblzma5 liblzma-devel"
+xz_CONTENTS="--exclude=*.dll usr/bin/ usr/share/"
+liblzma5_CATEGORY="Libs"
+liblzma5_SUMMARY="${SUMMARY} library (runtime)"
+liblzma5_CONTENTS="usr/bin/cyglzma-5.dll"
+liblzma_devel_CATEGORY="Libs"
+liblzma_devel_SUMMARY="${SUMMARY} library (development)"
+liblzma_devel_CONTENTS="usr/include/ usr/lib/"

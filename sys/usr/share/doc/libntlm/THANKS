@@ -1,0 +1,21 @@
+Libntlm THANKS -- acknowledgements
+Copyright (C) 2002, 2003, 2004, 2005, 2006, 2008 Simon Josefsson
+See the end for copying conditions.
+
+Much of the code was originally written by Andrew Tridgell for the
+Samba project.  Frediano Ziglio contributed rewritten files, so the
+library could be released under LGPL instead of GPL.  The MD4 and DES
+implementation was replaced by the Gnulib LGPL copy, contributed by
+Simon Josefsson.
+
+Bug reports, patches and/or suggestions were also received from:
+
+David Leonard <davidl@vintela.com>
+Matthias Andree <matthias.andree@gmx.de>
+Pavel Fedin <fedin@matek.ru>
+Andrej Kacian <ticho@gentoo.org>
+
+----------------------------------------------------------------------
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

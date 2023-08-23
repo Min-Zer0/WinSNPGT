@@ -1,0 +1,211 @@
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Sun Mar 31 13:24:50 2019 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>pic-20.html</title>
+
+</head>
+<hr>
+[ <a href="pic-19.html">prev</a> | <a href="pic-21.html">next</a> | <a href="pic.html">top</a> ]
+<hr>
+
+
+<h2>20. Some Larger Examples
+<a name="20. Some Larger Examples"></a>
+</h2>
+
+
+<p style="margin-top: 1em"><font color="#000000">Here are a
+few larger examples, with complete source code. One of our
+earlier examples is generated in an instructive way using a
+for loop:</font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000"><small>.PS
+<br>
+# Draw a demonstration up left arrow with grid box overlay
+<br>
+define gridarrow <br>
+{ <br>
+move right 0.1 <br>
+[ <br>
+{arrow up left $1;} <br>
+box wid 0.5 ht 0.5 dotted with .nw at last arrow .end; <br>
+for i = 2 to ($1 / 0.5) do <br>
+{ <br>
+box wid 0.5 ht 0.5 dotted with .sw at last box .se; <br>
+} <br>
+move down from last arrow .center; <br>
+[ <br>
+sprintf(&quot;\fBarrow up left %g\fP&quot;, $1) <br>
+] <br>
+] <br>
+move right 0.1 from last [] .e; <br>
+} <br>
+gridarrow(0.5); <br>
+gridarrow(1); <br>
+gridarrow(1.5); <br>
+gridarrow(2); <br>
+undef gridarrow <br>
+.PE</small></font></p>
+
+
+<p align="center" style="margin-top: 1em"><font color="#000000"><small><img src="img/pic48.png" alt="Image img/pic48.png"></small></font></p>
+
+
+<p align="center" style="margin-top: 1em"><font color="#000000">Figure
+20-1: Diagonal arrows (dotted boxes show the implied
+0.5-inch grid)</font></p>
+
+
+<p style="margin-top: 1em"><font color="#000000">Here&rsquo;s
+an example concocted to demonstrate layout of a large,
+multiple-part pattern:</font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000"><small>.PS
+<br>
+define filter {box ht 0.25 rad 0.125} <br>
+lineht = 0.25; <br>
+Top: [ <br>
+right; <br>
+box &quot;\fBms\fR&quot; &quot;sources&quot;; <br>
+move; <br>
+box &quot;\fBHTML\fR&quot; &quot;sources&quot;; <br>
+move; <br>
+box &quot;\fBlinuxdoc-sgml\fP&quot; &quot;sources&quot; wid
+1.5; <br>
+move; <br>
+box &quot;\fBTexinfo\fP&quot;
+&quot;sources&quot;;</small></font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000"><small>line
+down from 1st box .s lineht; <br>
+A: line down; <br>
+line down from 2nd box .s; filter &quot;\fBhtml2ms\fP&quot;;
+<br>
+B: line down; <br>
+line down from 3rd box .s; filter &quot;\fBformat\fP&quot;;
+<br>
+C: line down; <br>
+line down from 4th box .s; filter
+&quot;\fBtexi2roff\fP&quot;; <br>
+D: line down; <br>
+] <br>
+move down 1 from last [] .s; <br>
+Anchor: box wid 1 ht 0.75 &quot;\fBms\fR&quot;
+&quot;intermediate&quot; &quot;form&quot;; <br>
+arrow from Top.A.end to Anchor.nw; <br>
+arrow from Top.B.end to 1/3 of the way between Anchor.nw and
+Anchor.ne; <br>
+arrow from Top.C.end to 2/3 of the way between Anchor.nw and
+Anchor.ne; <br>
+arrow from Top.D.end to Anchor.ne <br>
+{ <br>
+# PostScript column <br>
+move to Anchor .sw; <br>
+line down left then down -&gt;; <br>
+filter &quot;\fBpic\fP&quot;; <br>
+arrow; <br>
+filter &quot;\fBeqn\fP&quot;; <br>
+arrow; <br>
+filter &quot;\fBtbl\fP&quot;; <br>
+arrow; <br>
+filter &quot;\fBgroff\fP&quot;; <br>
+arrow; <br>
+box &quot;PostScript&quot;;</small></font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000"><small>#
+HTML column <br>
+move to Anchor .se; <br>
+line down right then down -&gt;; <br>
+A: filter dotted &quot;\fBpic2img\fP&quot;; <br>
+arrow; <br>
+B: filter dotted &quot;\fBeqn2html\fP&quot;; <br>
+arrow; <br>
+C: filter dotted &quot;\fBtbl2html\fP&quot;; <br>
+arrow; <br>
+filter &quot;\fBms2html\fP&quot;; <br>
+arrow; <br>
+box &quot;HTML&quot;;</small></font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000"><small>#
+Nonexistence caption <br>
+box dashed wid 1 at B + (2,0) &quot;These tools&quot;
+&quot;don&rsquo;t yet exist&quot;; <br>
+line chop 0 chop 0.1 dashed from last box .nw to A.e -&gt;;
+<br>
+line chop 0 chop 0.1 dashed from last box .w to B.e -&gt;;
+<br>
+line chop 0 chop 0.1 dashed from last box .sw to C.e -&gt;;
+<br>
+} <br>
+.PE</small></font></p>
+
+
+<p align="center" style="margin-top: 1em"><font color="#000000"><small><img src="img/pic49.png" alt="Image img/pic49.png"></small></font></p>
+
+
+<p align="center" style="margin-top: 1em"><font color="#000000">Figure
+20-2: Hypothetical production flow for dual-mode
+publishing</font></p>
+
+
+<p align="center" style="margin-top: 1em"><font color="#000000"><img src="img/pic50.png" alt="Image img/pic50.png"></font></p>
+
+
+<p align="center" style="margin-top: 1em"><font color="#000000">Figure
+20-3: Three-dimensional Boxes</font></p>
+
+<p style="margin-top: 1em"><font color="#000000">Here the
+source code for figure 20-3:</font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000">.PS
+<br>
+# a three-dimensional block <br>
+# <br>
+# tblock(&lt;width&gt;, &lt;height&gt;,
+&lt;text&gt;)</font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000">define
+tblock { [ <br>
+box ht $2 wid $1 \ <br>
+color &quot;gold&quot; outlined &quot;black&quot; \ <br>
+xslanted 0 yslanted 0 \ <br>
+$3; <br>
+box ht .1 wid $1 \ <br>
+color &quot;yellow&quot; outlined &quot;black&quot; \ <br>
+xslanted .1 yslanted 0 \ <br>
+with .sw at last box .nw; <br>
+box ht $2 wid .1 \ <br>
+color &quot;goldenrod&quot; outlined &quot;black&quot; \
+<br>
+xslanted 0 yslanted .1 \ <br>
+with .nw at 2nd last box .ne; <br>
+] }</font></p>
+
+
+<p style="margin-left:10%; margin-top: 1em"><font color="#000000">tblock(1,
+.5, &quot;Master&quot; &quot;1&quot;); <br>
+move -.1 <br>
+tblock(.5, 1, &quot;Slave&quot;); <br>
+ .PE</font></p>
+<hr>
+[ <a href="pic-19.html">prev</a> | <a href="pic-21.html">next</a> | <a href="pic.html">top</a> ]
+<hr>

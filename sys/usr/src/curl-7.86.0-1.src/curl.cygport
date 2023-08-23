@@ -1,0 +1,337 @@
+#|/usr/bin/cygport
+# curl.cygport - curl Cygwin package build control script definitions
+
+NAME=curl
+VERSION=7.86.0
+RELEASE=1
+
+CATEGORY="Net"
+SUMMARY="Multi-protocol file transfer tool"
+XARCH=$ARCH
+DESCRIPTION="Command line tool and Library supporting transferring files with
+URL syntax, using FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, and
+FILE, SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form
+based upload, proxies, cookies, user+password authentication (Basic,
+Digest, NTLM, Negotiate...), file transfer resume, proxy tunneling and a
+busload of other useful tricks."
+#Package provides Mingw MS VC RT-linked binaries, NOT Cygwin binaries,
+#for use with the mingw64-$XARCH-gcc cross compiler, installed in
+#/usr/$XARCH-w64-mingw32/sys-root/mingw/{bin,lib,include}/."
+BASE=${NAME##*-}
+
+HOMEPAGE=https://curl.se
+SRC_DIR=$BASE-$VERSION
+SRC_URI=$HOMEPAGE/download/$SRC_DIR.tar.xz
+SRC_URI+=" $SRC_URI.asc"
+PATCH_URI=
+GIT_URI=https://github.com/$BASE/$BASE
+GIT_ARCHIVE=$GIT_URI/releases/download/${VERSION//./_}/$SRC_DIR.tar.xz
+
+DIFF_EXCLUDES="Makefile curlbuild.h curl_config.h"
+DIFF_EXCLUDES+=" Makefile.in compile depcomp install-sh"
+# uses private wrapper for initializing libtool
+DIFF_EXCLUDES+=" libtool.m4 lt*.* missing mkinstalldirs test-driver"
+DIFF_EXCLUDES+=" libcurl.plist"	# 7.83
+
+DEPEND="libiconv-devel libidn2-devel libnghttp2-devel"
+DEPEND+=" libssh2-devel libssl-devel libunistring-devel"
+DEPEND+=" zlib-devel libzstd-devel"
+DEPEND+=" binutils gcc-core"
+DEPEND+=" libbrotli-devel libcom_err-devel"
+DEPEND+=" libgcc1 libgsasl-devel libgssapi_krb5_2"
+DEPEND+=" libintl-devel libk5crypto3 libkrb5-devel"
+DEPEND+=" openldap-devel libntlm-devel libpsl-devel libsasl2-devel"
+DEPEND+=" autoconf automake coreutils gawk"
+DEPEND+=" grep groff make perl-libwww-perl pkg-config sed"
+BUILD_REQUIRES="$DEPEND"
+
+# threaded-resolver, pthreads: use threaded resolver instead of c-ares
+CYGCONF_ARGS="
+	 --enable-debug
+	 --enable-optimize
+	 --enable-pthreads
+	--disable-static
+	   --with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt
+	   --with-gssapi
+	   --with-libssh2
+	   --with-openssl
+"
+#	--disable-alt-svc	Disable alt-svc support
+#	 --enable-alt-svc	Enable alt-svc support
+#	--disable-ares		Disable c-ares for DNS lookups
+#	 --enable-ares[=PATH]	Enable c-ares for DNS lookups
+#	 --enable-code-coverage	Provide code coverage
+#	--disable-cookies	Disable cookies support
+#	 --enable-cookies	Enable cookies support
+#	--disable-crypto-auth	Disable cryptographic authentication
+#	 --enable-crypto-auth	Enable cryptographic authentication
+#	--disable-curldebug	Disable curl debug memory tracking
+#	 --enable-curldebug	Enable curl debug memory tracking
+#	--disable-dateparse	Disable date parsing
+#	 --enable-dateparse	Enable date parsing
+#	--disable-debug		Disable debug build options
+#	 --enable-debug		Enable debug build options
+#	 --enable-dependency-tracking	do not reject slow dependency extractors
+#	--disable-dependency-tracking	speeds up one-time build
+#	--disable-dict		Disable DICT support
+#	 --enable-dict		Enable DICT support
+#	--disable-dnsshuffle	Disable DNS shuffling
+#	 --enable-dnsshuffle	Enable DNS shuffling
+#	--disable-doh		Disable DoH support
+#	 --enable-doh		Enable DoH support
+#	--disable-ech		Disable ECH support	Encrypted Server Name Indication
+#	 --enable-ech		Enable ECH support	Encrypted Client Hello was ESNI
+#	 --enable-fast-install[=PKGS]	optimize for fast installation [default=yes]
+#	--disable-file		Disable FILE support
+#	 --enable-file		Enable FILE support
+#	--disable-ftp		Disable FTP support
+#	 --enable-ftp		Enable FTP support
+#	--disable-get-easy-options	Disable curl_easy_options
+#	 --enable-get-easy-options	Enable curl_easy_options
+#	--disable-gopher	Disable Gopher support
+#	 --enable-gopher	Enable Gopher support
+#	--disable-headers-api	Disable headers-api support
+#	 --enable-headers-api	Enable headers-api support
+#	--disable-hsts		Disable HSTS support
+#	 --enable-hsts		Enable HSTS support
+#	--disable-http		Disable HTTP support
+#	 --enable-http		Enable HTTP support
+#	--disable-http-auth	Disable HTTP authentication support
+#	 --enable-http-auth	Enable HTTP authentication support
+#	--disable-imap		Disable IMAP support
+#	 --enable-imap		Enable IMAP support
+#	--disable-ipv6		Disable IPv6 support
+#	 --enable-ipv6		Enable IPv6 (with IPv4) support
+#	--disable-largefile	omit support for large files
+#	--disable-ldap		Disable LDAP support
+#	 --enable-ldap		Enable LDAP support
+#	--disable-ldaps		Disable LDAPS support
+#	 --enable-ldaps		Enable LDAPS support
+#	--disable-libcurl-option	Disable --libcurl C code generation support
+#	 --enable-libcurl-option	Enable --libcurl C code generation support
+#	 --enable-libgcc	use libgcc when linking
+#	--disable-libtool-lock	avoid locking (might break parallel builds)
+#	 --enable-maintainer-mode enable make rules and dependencies not useful
+#				(and sometimes confusing) to the casual installer
+#	--disable-manual	Disable built-in manual
+#	 --enable-manual	Enable built-in manual
+#	--disable-mime		Disable mime API support
+#	 --enable-mime		Enable mime API support
+#	--disable-mqtt		Disable MQTT support
+#	 --enable-mqtt		Enable MQTT support
+#	--disable-netrc		Disable netrc parsing
+#	 --enable-netrc		Enable netrc parsing
+#	--disable-ntlm		Disable NTLM support
+#	 --enable-ntlm		Enable NTLM support
+#	--disable-ntlm-wb	Disable NTLM delegation to winbind ntlm_auth helper
+#	 --enable-ntlm-wb[=FILE] Enable NTLM delegation to winbind ntlm_auth helper,
+#		where FILE is ntlm_auth absolute filename (default: /usr/bin/ntlm_auth)
+#	--disable-openssl-auto-load-config	Disable automatic loading of OpenSSL configuration
+#	 --enable-openssl-auto-load-config	Enable automatic loading of OpenSSL configuration
+#	--disable-optimize	Disable compiler optimizations
+#	 --enable-optimize	Enable compiler optimizations
+#	--disable-option-checking	ignore unrecognized --enable/--with options
+#	--disable-pop3		Disable POP3 support
+#	 --enable-pop3		Enable POP3 support
+#	--disable-progress-meter	Disable progress-meter
+#	 --enable-progress-meter	Enable progress-meter
+#	--disable-proxy		Disable proxy support
+#	 --enable-proxy		Enable proxy support
+#	--disable-pthreads	Disable POSIX threads
+#	 --enable-pthreads	Enable POSIX threads (default for threaded resolver)
+#	--disable-rt		disable dependency on -lrt
+#	--disable-rtsp		Disable RTSP support
+#	 --enable-rtsp		Enable RTSP support
+#	 --enable-shared[=PKGS]	build shared libraries [default=yes]
+#	 --enable-silent-rules	less verbose build output (undo: "make V=1")
+#	--disable-silent-rules	verbose build output (undo: "make V=0")
+#	--disable-smb		Disable SMB/CIFS support
+#	 --enable-smb		Enable SMB/CIFS support
+#	--disable-smtp		Disable SMTP support
+#	 --enable-smtp		Enable SMTP support
+#	--disable-socketpair	Disable socketpair support
+#	 --enable-socketpair	Enable socketpair support
+#	--disable-sspi		Disable SSPI
+#	 --enable-sspi		Enable SSPI
+#	 --enable-static[=PKGS]	build static libraries [default=yes]
+#	--disable-symbol-hiding	Disable hiding of library internal symbols
+#	 --enable-symbol-hiding	Enable hiding of library internal symbols
+#	--disable-telnet	Disable TELNET support
+#	 --enable-telnet	Enable TELNET support
+#	--disable-tftp		Disable TFTP support
+#	 --enable-tftp		Enable TFTP support
+#	--disable-threaded-resolver	Disable threaded resolver
+#	 --enable-threaded-resolver	Enable threaded resolver
+#	--disable-tls-srp	Disable TLS-SRP authentication
+#	 --enable-tls-srp	Enable TLS-SRP authentication
+#	--disable-unix-sockets	Disable Unix domain sockets
+#	 --enable-unix-sockets	Enable Unix domain sockets
+#	--disable-verbose	Disable verbose strings
+#	 --enable-verbose	Enable verbose strings
+#	--disable-versioned-symbols	Disable versioned symbols in shared library
+#	 --enable-versioned-symbols	Enable versioned symbols in shared library
+#	--disable-warnings	Disable strict compiler warnings
+#	 --enable-warnings	Enable strict compiler warnings
+#	--disable-werror	Disable compiler warnings as errors
+#	 --enable-werror	Enable compiler warnings as errors
+#	   --with-aix-soname=aix|svr4|both shared library versioning (aka "SONAME")
+#				variant to provide on AIX, [default=aix].
+#	   --with-amissl	enable Amiga native SSL/TLS (AmiSSL)
+#	   --with-bearssl=PATH	where to look for BearSSL, PATH points to the installation root
+#	--without-brotli	disable BROTLI
+#	   --with-brotli=PATH	Where to look for brotli, PATH points to the BROTLI installation;
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+#	--without-ca-bundle	Do not use a default CA bundle
+#	   --with-ca-bundle=FILE	Path to a file containing CA certificates (example: /etc/ca-bundle.crt)
+#	--without-ca-fallback	Do not use the built in CA store of the SSL library
+#	   --with-ca-fallback	Use the built in CA store of the SSL library
+#	--without-ca-path	Do not use a default CA path
+#	   --with-ca-path=DIRECTORY Path to a directory containing CA certificates stored individually,
+#				with their filenames in a hash format. This option can be used with the
+#				OpenSSL, GnuTLS and mbedTLS backends. Refer to OpenSSL c_rehash for details. (example: /etc/certificates)
+#	--without-default-ssl-backend	Use implicit default SSL backend
+#	   --with-default-ssl-backend=NAME	Use NAME as default SSL backend
+#	   --with-egd-socket=FILE	Entropy Gathering Daemon socket pathname
+#	--without-fish-functions-dir	Do not install fish completions
+#	   --with-fish-functions-dir=PATH	Install fish completions to PATH
+#	   --with-gnu-ld	assume the C compiler uses GNU ld [default=no]
+#	   --with-gnutls=PATH	where to look for GnuTLS, PATH points to the installation root
+#	   --with-gssapi=DIR	Where to look for GSS-API
+#	   --with-gssapi-includes=DIR	Specify location of GSS-API headers
+#	   --with-gssapi-libs=DIR	Specify location of GSS-API libs
+#	--without-hyper		Disable hyper usage
+#	   --with-hyper=PATH	Enable hyper usage
+#	   --with-lber-lib=libname	Specify name of lber lib file
+#	   --with-ldap-lib=libname	Specify name of ldap lib file
+#	--without-libgsasl	disable libgsasl support for SCRAM
+#	--without-libidn2	Disable libidn2 usage
+#	   --with-libidn2=PATH	Enable libidn2 usage
+#	--without-libpsl	disable support for libpsl cookie checking
+#	--without-librtmp	disable LIBRTMP
+#	   --with-librtmp=PATH	Where to look for librtmp, PATH points to the LIBRTMP installation;
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+#	   --with-libssh	enable libssh
+#	   --with-libssh=PATH	Where to look for libssh, PATH points to the libssh installation;
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+#	   --with-libssh2	enable libssh2
+#	   --with-libssh2=PATH	Where to look for libssh2, PATH points to the libssh2 installation;
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+#	   --with-mbedtls=PATH	where to look for mbedTLS, PATH points to the installation root
+#	--without-msh3		Disable msh3 usage
+#	   --with-msh3=PATH	Enable msh3 usage
+#	--without-nghttp2	Disable nghttp2 usage
+#	   --with-nghttp2=PATH	Enable nghttp2 usage
+#	--without-nghttp3	Disable nghttp3 usage
+#	   --with-nghttp3=PATH	Enable nghttp3 usage
+#	--without-ngtcp2	Disable ngtcp2 usage
+#	   --with-ngtcp2=PATH	Enable ngtcp2 usage
+#	   --with-nss=PATH	where to look for NSS, PATH points to the installation root
+#	   --with-nss-deprecated confirm you realize NSS is going away
+#	   --with-openssl=PATH	Where to look for OpenSSL, PATH points to the SSL installation (default: /usr/local/ssl);
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+#	   --with-pic[=PKGS]	try to use only PIC/non-PIC objects [default=use both]
+#	--without-quiche	Disable quiche usage
+#	   --with-quiche=PATH	Enable quiche usage
+#	   --with-random=FILE	read randomness from FILE (default=/dev/urandom)
+#	   --with-rustls=PATH	where to look for rustls, PATH points to the installation root
+#	   --with-schannel	enable Windows native SSL/TLS
+#	   --with-secure-transport	enable Apple OS native SSL/TLS
+#	--without-ssl		build without any TLS library
+#	   --with-ssl=PATH	old version of --with-openssl
+#	   --with-sysroot[=DIR]	Search for dependent libraries within DIR (or the compiler sysroot if not specified).
+#	--without-winidn	disable Windows native IDN
+#	   --with-winidn=PATH	enable Windows native IDN
+#	   --with-wolfssh	enable wolfssh
+#	   --with-wolfssh=PATH	Where to look for wolfssh, PATH points to the wolfSSH installation;
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+#	   --with-wolfssl=PATH	where to look for WolfSSL, PATH points to the installation root (default: system lib default)
+#	--without-zlib		disable use of zlib
+#	   --with-zlib=PATH	search for zlib in PATH
+#	--without-zsh-functions-dir	Do not install zsh completions
+#	   --with-zsh-functions-dir=PATH	Install zsh completions to PATH
+#	--without-zstd		disable libzstd
+#	   --with-zstd=PATH	Where to look for libzstd, PATH points to the libzstd installation;
+#				when possible, set the PKG_CONFIG_PATH environment variable instead of using this option
+
+PKG_NAMES="lib${BASE}4 lib$BASE-devel lib$BASE-doc $BASE"
+
+#CROSS_HOST=$XARCH-w64-mingw32
+#inherit cross
+
+#MAKEOPTS+=" bin_PROGRAMS= man_MANS= dist_man_MANS= "
+
+curl_DOCS="
+	CHANGES COPYING README RELEASE-NOTES
+	docs/FAQ docs/KNOWN_BUGS docs/MAIL-ETIQUETTE
+	docs/CIPHERS.md docs/FEATURES.md docs/HTTP-COOKIES.md
+	docs/PARALLEL-TRANSFERS.md docs/README.md docs/SSLCERTS.md
+	docs/SSL-PROBLEMS.md docs/TheArtOfHttpScripting.md
+"
+curl_CONTENTS="
+	usr/bin/curl.exe
+	usr/share/fish/vendor_completions.d/curl.fish
+	usr/share/man/man1/curl.1*
+	usr/share/zsh/site-functions/_curl
+"
+
+
+libcurl4_CATEGORY="$CATEGORY Libs"
+libcurl4_SUMMARY="Multi-protocol file transfer library (runtime)"
+libcurl4_REQUIRES="ca-certificates"
+libcurl4_CONTENTS="usr/bin/cygcurl-4.dll"
+
+
+libcurl_devel_CATEGORY="$CATEGORY Devel Libs"
+libcurl_devel_SUMMARY="Multi-protocol file transfer library (development)"
+libcurl_devel_CONTENTS="
+	usr/bin/curl-config
+	usr/bin/mk-ca-bundle
+	usr/include/curl/
+	usr/lib/libcurl.dll.a
+	usr/lib/pkgconfig/libcurl.pc
+	usr/share/aclocal/libcurl.m4
+	usr/share/man/man1/curl-config.1*
+	usr/share/man/man1/mk-ca-bundle.1*
+"
+libcurl_devel_DOCS=docs/examples/
+
+
+libcurl_doc_CATEGORY="$CATEGORY Devel Doc"
+libcurl_doc_SUMMARY="Multi-protocol file transfer library (API docs)"
+libcurl_doc_CONTENTS=usr/share/man/man3/
+libcurl_doc_DOCS="
+	docs/*.md
+	docs/INSTALL docs/options-in-versions docs/THANKS docs/TODO
+"
+
+
+src_install() {
+    cd $B
+    newbin $S/scripts/mk-ca-bundle.pl mk-ca-bundle
+    doman $S/docs/mk-ca-bundle.1*
+
+    MAKEOPTS=-i cyginstall	# 7.83.1 install (docs/man) runs twice and fails locally
+    cyginstall -C scripts
+}
+
+
+# SPDX-License-Identifier: curl
+LICENSE_SPDX="SPDX-License-Identifier: curl"
+LICENSE=curl
+LICENSE_URI=COPYING
+
+CYGWIN_MAINTAINER=Brian%20Inglis
+CYGWIN_MAINTAINER_EMAIL=Brian.Inglis@SystematicSW.ab.ca
+
+UPSTREAM_MAINTAINER=Daniel%20Stenberg
+UPSTREAM_MAINTAINER_EMAIL=daniel@haxx.se
+
+UPSTREAM=Curl%20Library
+UPSTREAM_EMAIL=curl-library@cool.haxx.se
+
+SUBJECT=${OSTYPE^}%20Package%20$NAME%20$VERSION
+MAILTO=mailto:$UPSTREAM_MAINTAINER%20%3C$UPSTREAM_MAINTAINER_EMAIL%3E\
+,$UPSTREAM%20%3C$UPSTREAM_EMAIL%3E\
+?from=$CYGWIN_MAINTAINER%20%3C$CYGWIN_MAINTAINER_EMAIL%3E\
+\&subject=$SUBJECT\&body=$SUBJECT
+
