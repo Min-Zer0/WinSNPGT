@@ -1,0 +1,2 @@
+README.md filter=lfs diff=lfs merge=lfs -text
+WinSNPGT.exe filter=lfs diff=lfs merge=lfs -text
