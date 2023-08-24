@@ -1,6 +1,6 @@
 # ___WinSNPGT: Genotyping of specified SNP sites on windows system___
 
-## 👉 Latest [release package](https://github.com/Min-Zer0/WinSNPGT/blob/install.package/WinSNPGT.exe)
+## 👉 Latest [release package](https://github.com/Min-Zer0/WinSNPGT/raw/install.package/WinSNPGT.exe?download=)
 
 
 ## 💡 General Introduction
