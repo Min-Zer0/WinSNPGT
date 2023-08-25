@@ -153,5 +153,5 @@ The above are some possible causes of errors, if there are any other problems, w
 
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
-Min Zhu (1185643615@qq.com)  
+Min Zhu (Zer0Min@outlook.com)  
 Jiaxin (jxchen1217@gmail.com)
