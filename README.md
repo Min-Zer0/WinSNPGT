@@ -145,8 +145,9 @@ If there are some errors reported during the running of the program, please refe
 1. Only **English** is allowed in the **path where winSNPGT is installed**.
 2. The **background program is not allowed to be closed** until you get your results.
 3. Before filling in the information on the interface, the raw sequencing data must be moved to the path **./Input_fastq**.
-4. If you chose the way to read excel table, you must **save and close the table after filling it**, which means it cannot be kept open.
+4. If you choose the way to read excel table, you must **save and close the table after filling it**, which means it cannot be kept open.
 5. If you fill in the wrong information on the web page, you can use the button **Reset** or **refresh and refill the interface** before running, and there is no need to repeat moving files steps.
+6. The first time you use winSNPGT, you need to **connect to the Internet** to download the reference genome file. Once the reference genome file of the dataset you need to align is downloaded, it can be used offline.
 
 The above are some possible causes of errors, if there are any other problems, welcome to contact us.
 
