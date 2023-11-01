@@ -10,7 +10,7 @@ The rapid development of sequencing technology and dramatic drop in the cost hav
 
 - Background
 - Change Log
-- Data
+- Demo Data
 - Installation
 - Usage
 - Frequently Asked Questions
@@ -25,7 +25,7 @@ The WinSNPGT toolkit was developed to ensure that the genotypes uploaded by user
 - [Version 1.0](https://github.com/JessieChen7/WinSNPGT) - First version released on June, 1st, 2023
 - [Version 2.0](https://github.com/Min-Zer0/WinSNPGT) - Second version released on August, 24th, 2023
 
-## 🔍 Data
+## 🔍 Demo Data
 - The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061).
 
 	The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset in the toolkit to complete the genotyping.
@@ -154,4 +154,4 @@ The above are some possible causes of errors, if there are any other problems, w
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
 Min Zhu (Zer0Min@outlook.com)  
-Jiaxin (jxchen1217@gmail.com)
+Jiaxin Chen (jxchen1217@gmail.com)
