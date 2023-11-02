@@ -1,10 +1,16 @@
-# ___WinSNPGT: Genotyping of specified SNP sites on windows system___
+# ___WinSNPGT: Genotyping of specified SNP sites on Windows system___
 
 ## 👉 Latest [release package](https://github.com/Min-Zer0/WinSNPGT/raw/install.package/WinSNPGT.exe?download=)
 
+## 🧰 Relevant Software
+**[LinSNPGT](https://github.com/JessieChen7/LinSNPGT)**: Genotyping of specified SNP sites on Linux system
 
 ## 💡 General Introduction
-The rapid development of sequencing technology and dramatic drop in the cost have led to the generation of massive amounts of data. However, most of the raw data are analyzed on linux systems, and the process of generating variant loci information from sequencing data is a challenge for researchers unfamiliar with linux systems. We have developed a toolkit to call variant loci on the windows system, WinSNPGT. It can obtain the genotypes of the raw sequencing data for the snp loci specified in our datasets. The installation and use of this toolkit is described below.
+The rapid development of sequencing technology and dramatic drop in the cost have led to the generation of massive amounts of data. However, most of the raw data are analyzed on linux systems, and the process of generating variant loci information from sequencing data is a challenge for researchers unfamiliar with linux systems.
+
+We have developed a toolkit to call variant loci on the Windows system, WinSNPGT. It can obtain the genotypes of the raw sequencing data for the snp loci specified in our datasets.
+
+The installation and use of this toolkit is described below.
 
 ## 📘 Table of Contents
 
@@ -19,7 +25,7 @@ The rapid development of sequencing technology and dramatic drop in the cost hav
 ## 🧾 Background
 We have developed a phenotype prediction platform, **[CropGS-Hub](https://iagr.genomics.cn/CropGS/#/)**, which contains multiple high-quality datasets from important crops such as rice, maize and so on. These datasets were used as training sets to build models for phenotype prediction. Users can upload genotypes of their own samples to the platform for online phenotype prediction.
 
-The WinSNPGT toolkit was developed to ensure that the genotypes uploaded by users match those in the training set for modeling so that bias in the prediction results can be avoided. Users can run this program on the windows system to realize the whole process from sequencing files to getting genotypes by simple operation, which is very friendly for people who have little experience in linux operation.
+The WinSNPGT toolkit was developed to ensure that the genotypes uploaded by users match those in the training set for modeling so that bias in the prediction results can be avoided. Users can run this program on the Windows system to realize the whole process from sequencing files to getting genotypes by simple operation, which is very friendly for people who have little experience in linux operation.
 
 ## 🔍 Change Log
 - [Version 1.0](https://github.com/JessieChen7/WinSNPGT) - First version released on June, 1st, 2023
@@ -28,12 +34,12 @@ The WinSNPGT toolkit was developed to ensure that the genotypes uploaded by user
 ## 🔍 Demo Data
 - The example-data files are not included in the release package, you can download [example-data.tar.gz](https://figshare.com/articles/dataset/WinSNPGT_example_data/23365061).
 
-	The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset in the toolkit to complete the genotyping.
+	The species of the example-data files is *Oryza sativa*, you can select the rice-related dataset (e.g: GSTP007 ~ GSTP009) in the toolkit to complete the genotyping.
 
 - Java8 are not included in the release package, You can install it yourself by referring to the method in Installation.
 
 ## 🌟 Installation
-- Download the [release package](https://github.com/JessieChen7/WinSNPGT/raw/installation_package/WinSNPGT.exe) and unzip to your working directory.
+- Download the [WinSNPGT release package](https://github.com/JessieChen7/WinSNPGT/raw/installation_package/WinSNPGT.exe) and unzip to your working directory.
 - Download and install [jdk-8u381-windows-x64.exe](https://www.oracle.com/java/technologies/downloads/#java8-windows).
   
 ## 🌟 Usage
@@ -142,16 +148,24 @@ Select the corresponding reads files and enter the sample name.
 ## 💡 Frequently Asked Questions
 If there are some errors reported during the running of the program, please refer to the following scenarios to solve the problem:
 
-1. Only **English** is allowed in the **path where winSNPGT is installed**.
-2. The **background program is not allowed to be closed** until you get your results.
-3. Before filling in the information on the interface, the raw sequencing data must be moved to the path **./Input_fastq**.
-4. If you choose the way to read excel table, you must **save and close the table after filling it**, which means it cannot be kept open.
-5. If you fill in the wrong information on the web page, you can use the button **Reset** or **refresh and refill the interface** before running, and there is no need to repeat moving files steps.
-6. The first time you use winSNPGT, you need to **connect to the Internet** to download the reference genome file. Once the reference genome file of the dataset you need to align is downloaded, it can be used offline.
+- Only **English** is allowed in the **path where winSNPGT is installed**. Otherwise, the following error may occur:
+
+![ERROR1](https://github.com/JessieChen7/Image/blob/main/0824SNPGT/ERROR1.png)
+
+- The **background program is not allowed to be closed** until you get your results.
+- Before filling in the information on the interface, the raw sequencing data must be moved to the path **./Input_fastq**. Otherwise, the following error may occur:
+
+![ERROR2](https://github.com/JessieChen7/Image/blob/main/0824SNPGT/ERROR2.png)
+
+- If you chose the way to read excel table, you must **save and close the table after filling it**, which means it cannot be kept open. Otherwise, the following error may occur:
+
+![ERROR3](https://github.com/JessieChen7/Image/blob/main/0824SNPGT/ERROR3.png)
+
+- If you fill in the wrong information on the web page, you can use the button **Reset** or **refresh and refill the interface** before running, and there is no need to repeat moving files steps.
 
 The above are some possible causes of errors, if there are any other problems, welcome to contact us.
 
 ## 👥 Contacts
 Jie Qiu (qiujie@shnu.edu.cn)  
-Min Zhu (Zer0Min@outlook.com)  
+Min Zhu (1185643615@qq.com)  
 Jiaxin Chen (jxchen1217@gmail.com)
