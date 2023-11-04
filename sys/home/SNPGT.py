@@ -46,6 +46,7 @@ def Select_Ref():
     return Gen_list,Gen_url,Gen_info
 
 def readExcel():
+    os.system('mv %sInput_Fastq/* ./Input_Fastq/  '%(Getwd()))
     workbook = xlrd.open_workbook('Input_Fastq/Sample.table.xls')
     worksheet = workbook.sheet_by_name('Sheet1')
     nrows = worksheet.nrows
@@ -62,33 +63,97 @@ def readExcel():
     data = [row for row in data if any(col != '' for col in row)]
 
     Samples_list = []
+    Verif_SamplesList = []
     for i in data[3:]:
         Sample_dict = {'Sample': i[1], 'Read1': i[2], 'Read2': i[3]}
+        Verif_SamplesList += [i[2].split(".gz")[0],i[3].split(".gz")[0]]
         Samples_list.append(Sample_dict)
         project = data[1][2]
+    os.system('mv ./Input_Fastq/Sample.table.xls %sInput_Fastq/ '%(Getwd()))
+    gz_files = os.listdir(r'./Input_Fastq/')
+    gz_file = []
+    for i in gz_files:
+         gz_file.append(i.split(".gz")[0])
+         
+    Verif = "Yes"
+    for element in Verif_SamplesList:
+        if element not in gz_file:
+            Verif = "No"
+
+    if Verif == "No":
+        os.system('mv ./Input_Fastq/*  %sInput_Fastq/'%(Getwd()))
+        popup('ERROR: Reads file not consistent with Excel!',[put_html("<font color=red>Please check the ./Input_Fastq path for *.fastq.gz.</font>")])
+        with use_scope('Project_Tip',clear=True):
+            put_html('<h3 style="color:#0066CC">Please select your samples raw data.</h3>')
+            put_html('''1. Move your reads files 
+                        <strong><font color=#009432> *.fastq.gz </font></strong>
+                        or 
+                        <strong><font color=#009432> *.fastq </font></strong> 
+                        to the path: 
+                        <strong><font color=#009432> Input_Fastq</font></strong>.
+                        <br>
+                    2. If you selected 
+                        <strong>Reading Excel table</strong>, 
+                        please fill in the Ecxel file
+                        <strong><font color=#009432> Input_Fastq/Sample.table.xls </font></strong>.
+                        <br><br>''')
+            img = open('../BgPic/Excel.exp.png', 'rb').read()
+            put_image(img, width='400px')
+        with use_scope('Project_ReadMode',clear=True):
+            put_radio('ReadMode',options=["Manual selection","Reading Excel table"])
+        
+    else:
+        with use_scope('Project_Tip',clear=True):
+            put_text("")
+        with use_scope('Project_ReadMode',clear=True):
+            put_text("")
+        with use_scope('Project_ShowTable',clear=True):
+            put_html("<br><font size=4.5><strong><em>%s</em></strong></font>"%project)
+            put_table(Samples_list,header=["Sample", "Read1", "Read2"])
     return Samples_list,project
 
 def Manual_select_Sample():
+    project,Samples_list = "",[]
+    with use_scope('Project_Tip',clear=True):
+        put_text("")
+    with use_scope('Project_ReadMode',clear=True):
+        put_text("")            
     os.system('mv %sInput_Fastq/* ./Input_Fastq/  '%(Getwd()))
     os.system('mv ./Input_Fastq/Sample.table.xls %sInput_Fastq/ '%(Getwd()))
     gz_files = os.listdir(r'./Input_Fastq/')
     if len(gz_files) == 0:
         popup('ERROR: Reads file does not exist!',[put_html("<font color=red>Please ensure that you have moved the reads file *.fastq.gz to the path: Input_Fastq.</font>")])		
+        with use_scope('Project_Tip',clear=True):
+            put_html('<h3 style="color:#0066CC">Please select your samples raw data.</h3>')
+            put_html('''1. Move your reads files 
+                        <strong><font color=#009432> *.fastq.gz </font></strong>
+                        or 
+                        <strong><font color=#009432> *.fastq </font></strong> 
+                        to the path: 
+                        <strong><font color=#009432> Input_Fastq</font></strong>.
+                        <br>
+                    2. If you selected 
+                        <strong>Reading Excel table</strong>, 
+                        please fill in the Ecxel file
+                        <strong><font color=#009432> Input_Fastq/Sample.table.xls </font></strong>.
+                        <br><br>''')
+            img = open('../BgPic/Excel.exp.png', 'rb').read()
+            put_image(img, width='400px')
+        with use_scope('Project_ReadMode',clear=True):
+            put_radio('ReadMode',options=["Manual selection","Reading Excel table"])
     else:
-        with use_scope('Project_4',clear=True):
+        with use_scope('Project_Name',clear=True):
             put_input('ProjectName', label='Please enter your project name which will be the prefix of output files.')
         
-        Samples_list = []
-        project = None
         read_files = os.listdir(r'Input_Fastq/')
-        with use_scope('Project_5'):
+        with use_scope('Project_ShowTable'):
             put_html("<br>")
             put_text("Please enter your sample names and select the the corresponding reads files.")
             put_grid([[put_text('Sample'), put_text('Read1'),put_text('Read2')]])
             put_row([put_input('Sample'),
                      put_select('Read1', options=read_files),
                      put_select('Read2', options=read_files)])
-            put_actions('Add_Button',buttons=['Add','Submit','Reset'])
+            put_actions('Add_Button',buttons=['Add','Submit'])
 
         while True:
             pin_wait_change("Add_Button")
@@ -96,21 +161,40 @@ def Manual_select_Sample():
                 project = pin.ProjectName
                 Sample_dict = {'Sample': pin.Sample, 'Read1': pin.Read1, 'Read2': pin.Read2}
                 Samples_list.append(Sample_dict)
-                with use_scope('Project_3',clear=True):
+                with use_scope('Project_Table',clear=True):
                     put_table(Samples_list,header=["Sample", "Read1", "Read2"]) 
-            elif pin.Add_Button == "Reset":
-                with use_scope('Project_3',clear=True):
-                    put_text("")
-                with use_scope('Project_4',clear=True):
-                    put_text("")
-                with use_scope('Project_5',clear=True):
-                    put_text("")
-                break
             elif pin.Add_Button == "Submit":
-                with use_scope('Project_5',clear=True):
+                with use_scope('Project_ShowTable',clear=True):
                     put_text("")
                 break
-        return(project,Samples_list)
+        if project != "":
+            with use_scope('Project_Name',clear=True):
+                put_html("<br><font size=4.5><strong><em>%s</em></strong></font>"%project)
+        else:
+            project = "Task"
+            with use_scope('Project_Name',clear=True):
+                put_html("<br><font size=4.5><strong><em>%s</em></strong></font>"%project)
+        if Samples_list == []:
+            popup('ERROR: The sample cannot be empty!',[put_html("<font color=red>Please enter samples and reads.</font>")])		
+            with use_scope('Project_Tip',clear=True):
+                put_html('<h3 style="color:#0066CC">Please select your samples raw data.</h3>')
+                put_html('''1. Move your reads files 
+                            <strong><font color=#009432> *.fastq.gz </font></strong>
+                            or 
+                            <strong><font color=#009432> *.fastq </font></strong> 
+                            to the path: 
+                            <strong><font color=#009432> Input_Fastq</font></strong>.
+                            <br>
+                        2. If you selected 
+                            <strong>Reading Excel table</strong>, 
+                            please fill in the Ecxel file
+                            <strong><font color=#009432> Input_Fastq/Sample.table.xls </font></strong>.
+                            <br><br>''')
+                img = open('../BgPic/Excel.exp.png', 'rb').read()
+                put_image(img, width='400px')
+            with use_scope('Project_ReadMode',clear=True):
+                put_radio('ReadMode',options=["Manual selection","Reading Excel table"])    
+    return(project,Samples_list)
 
 def download(SpeciesData,URL):
     start = time.time()
@@ -119,21 +203,20 @@ def download(SpeciesData,URL):
     chunk_size = 1024
     content_size = int(response.headers['content-length'])
     with use_scope('Run_process'):
-        put_html('<font color=#0066CC size=4.5>Start download species reference genome dataset <b>[File size]: {size:.2f} MB</b></font>'.format(size = content_size / chunk_size /1024))
+        put_html('<h3 style="color:#0066CC" size=4.5>Start download species reference genome dataset <b>[File size]: {size:.2f} MB</b></h3>'.format(size = content_size / chunk_size /1024))
         barname = ''.join(random.sample('abcdefghijklmnopqrstuvwxyz',5))
         put_processbar(barname,0, label= "Downloading...")
-        try:
-            if response.status_code == 200:
-                filepath = "./Reference_Genome/" + '%s.tar.gz'%(SpeciesData)
-                with open(filepath,'wb') as file:
-                    for data in response.iter_content(chunk_size = chunk_size):
-                        file.write(data)
-                        size +=len(data)
-                        set_processbar(barname,(size / content_size), label= "Downloading...")
-            end = time.time()
-            put_html('<font color=#0066CC size=4>Download completed!,times: %.2fs</font>'% (end - start))
-        except:
-            put_html('<font color=#red size=4>Network connection Error! </font>')
+
+        if response.status_code == 200:
+            filepath = "./Reference_Genome/" + '%s.tar.gz'%(SpeciesData)
+            with open(filepath,'wb') as file:
+                for data in response.iter_content(chunk_size = chunk_size):
+                    file.write(data)
+                    size +=len(data)
+                    set_processbar(barname,(size / content_size), label= "Downloading...")
+        end = time.time()
+        put_html('<h3 style="color:#0066CC" size=4>Download completed!,times: %.2fs</h3>'% (end - start))
+        
  
 def Check_Ref(SpeciesData,URL):
     if os.path.exists(r'Reference_Genome/%s'%(SpeciesData)) == False and os.path.exists(r'Reference_Genome/%s.tar.gz'%(SpeciesData)) == False:
@@ -156,7 +239,7 @@ def Check_Ref(SpeciesData,URL):
                         'SNP_intervals.1.bt2','SNP_intervals.2.bt2','SNP_intervals.3.bt2','SNP_intervals.4.bt2',
                         'SNP_intervals.rev.1.bt2','SNP_intervals.rev.2.bt2'}
         if  set(files) == Check_file:
-            with use_scope('Run_process',clear=True):
+            with use_scope('Run_process'):
                 style(put_html("<h3>Indexing of the dataset has been completed!</h3>"), 'color:green')
             CheckResult = "OK"
         else:
@@ -297,18 +380,11 @@ def Genotyping(SpeciesData,URL,project,Samples_list,thread):
 def Input_parameter():
     img = open('../BgPic/head.png', 'rb').read() 
     put_image(img, width='1000px')
-					
-    Species2Dataset,Species2Dataset_url,Species2Dataset_info = Select_Ref()
-    Dataset = list(Species2Dataset.keys())
-    put_html("<h2>Species and Dataset</h2>")        
-    with use_scope('SpeciesDataset1'):
-        put_html('<h3 style="color:#0066CC">Please select the species and dataset to genotype your samples.</h3>')
-        put_select('Species', options=Dataset)
-    with use_scope('SpeciesDataset2'):    
-        put_select('Dataset', options=Species2Dataset[Dataset[0]])
 
+    
+    # Project		
     put_html("<h2>Project</h2>")
-    with use_scope('Project_1'):
+    with use_scope('Project_Tip'):
         put_html('<h3 style="color:#0066CC">Please select your samples raw data.</h3>')
         put_html('''1. Move your reads files 
                         <strong><font color=#009432> *.fastq.gz </font></strong>
@@ -325,34 +401,48 @@ def Input_parameter():
         img = open('../BgPic/Excel.exp.png', 'rb').read()
         put_image(img, width='400px')
         put_text("")
-            
-    with use_scope('Project_2'):
+    with use_scope('Project_ReadMode'):
         put_radio('ReadMode',options=["Manual selection","Reading Excel table"])
-    with use_scope('Project_4'):
-                    put_text("")    
-    with use_scope('Project_3'):
-                    put_text("")
-    with use_scope('Project_5'):
+    with use_scope('Project_Name'):
+        put_text("")    
+    with use_scope('Project_Table'):
+        put_text("")
+    with use_scope('Project_ShowTable'):
         put_text("")
     
+
+    # Species and Dataset
+    Species2Dataset,Species2Dataset_url,Species2Dataset_info = Select_Ref()
+    Dataset = list(Species2Dataset.keys())
+    put_html("<h2>Species and Dataset</h2>")        
+    with use_scope('SpeciesDataset_Spec'):
+        put_html('<h3 style="color:#0066CC">Please select the species and dataset to genotype your samples.</h3>')
+        put_select('Species', options=Dataset)
+    with use_scope('SpeciesDataset_Dat'):    
+        put_select('Dataset', options=Species2Dataset[Dataset[0]])
     put_html("<hr>")
-    style(put_html("<h3>Please enter the number of threads available to run the program.</h3>"),'color:#0066CC')
-    put_slider('thread',value = 4, min_value = 1, max_value = 64,
-               help_text='The more threads, the faster it will run. However, the actual configuration of the computer needs to be considered.')
-    put_actions('RunProgram',buttons=['Run'],help_text='There will be a 1-2 hour waiting time.')
     
+    # threads
+    with use_scope('thread_scope'):    
+        style(put_html("<h3>Please enter the number of threads available to run the program.</h3>"),'color:#0066CC')
+        put_slider('thread',value = 4, min_value = 1, max_value = 64,
+                help_text='The more threads, the faster it will run. However, the actual configuration of the computer needs to be considered.')
+        put_actions('RunProgram',buttons=['Run'],help_text='There will be a 1-2 hour waiting time.')
 
+    with use_scope('Running_scope'):
+        put_text("")
+    
     while pin.RunProgram != "Run":
-        pin_wait_change("Species","ReadMode","RunProgram")
+        pin_wait_change("ReadMode","Species","RunProgram")
         
-        if pin.RunProgram == "Run":
-            if pin.ReadMode == None:
-                put_html('''<h3 ><font color=red >ERROR: Sample undefined!</font></h3>
-                            <font color=#0066CC size=3>Please refresh this page and make sure you have selected the raw data for your samples.</font>''')
-                break
+        if pin.ReadMode == "Reading Excel table":
+            Samples_list,project = readExcel()   
+        elif pin.ReadMode == "Manual selection":
+            project,Samples_list = Manual_select_Sample()
 
+        if pin.RunProgram == "Run":
             SpeciesData = pin.Species + str("_") + pin.Dataset
-            with use_scope('SpeciesDataset1', clear=True):
+            with use_scope('SpeciesDataset_Spec', clear=True):
                 display_table = []
                 for line in Species2Dataset_info[SpeciesData]:
                     if "Paper" not in line:
@@ -365,44 +455,28 @@ def Input_parameter():
                         display_table.append([papertitle[0],put_markdown(papertitle[1].split("|")[0]+'\n'+ papertitle[1].split("|")[1])])
                 display_table += [["Downlod Links",put_markdown("["+Species2Dataset_url[SpeciesData]+"]("+Species2Dataset_url[SpeciesData]+")")]]
                 put_table(display_table)
-            with use_scope('SpeciesDataset2', clear=True):
+
+            thread_num = pin.thread            
+            with use_scope('SpeciesDataset_Dat', clear=True):
                 put_text("")
-            with use_scope('Project_1', clear=True):
+            with use_scope('SpeciesDataset_Submit', clear=True):
+                put_text("")
+            with use_scope('thread_scope', clear=True):
                 put_text("")
             
-            Genotyping(SpeciesData,Species2Dataset_url[SpeciesData],project,Samples_list,pin.thread)
+            with use_scope('Running_scope', clear=True):
+                put_html("<h2 style='color:#009432'> Running... </h2>")
+            
+            Genotyping(SpeciesData,Species2Dataset_url[SpeciesData],project,Samples_list,thread_num)
+            
+            with use_scope('Running_scope', clear=True):
+                img = open('../BgPic/Done.png', 'rb').read()
+                put_image(img, width='1000px')
 
-            img = open('../BgPic/Done.png', 'rb').read()
-            put_image(img, width='1000px')
-            sys.exit() 
-        
-        if pin.ReadMode == "Manual selection":
-            with use_scope('Project_1',clear=True):
-                put_text("")
-            with use_scope('Project_4',clear=True):
-                put_text("")
-            with use_scope('Project_5',clear=True):
-                put_text("")
-                project,Samples_list = Manual_select_Sample()
-                if project != None:
-                    with use_scope('Project_4',clear=True):
-                        put_html("<br><font size=4.5><strong><em>%s</em></strong></font>"%project)
+            sys.exit()
 
-        elif pin.ReadMode == "Reading Excel table":
-            with use_scope('Project_1',clear=True):
-                put_text("")
-            with use_scope('Project_3',clear=True):
-                put_text("")
-            with use_scope('Project_4',clear=True):
-                put_text("")
-            with use_scope('Project_5',clear=True):
-                os.system('mv %sInput_Fastq/* ./Input_Fastq/  '%(Getwd()))
-                Samples_list,project = readExcel()
-                put_html("<br><font size=4.5><strong><em>%s</em></strong></font>"%project)
-                put_table(Samples_list,header=["Sample", "Read1", "Read2"])
-
-        with use_scope('SpeciesDataset2', clear=True):
+        with use_scope('SpeciesDataset_Dat', clear=True):
             put_select('Dataset', options=Species2Dataset[pin.Species])
-        
+
 if __name__ == '__main__':
     start_server( Input_parameter,port = 80,debug=True,auto_open_webbrowser=True)
