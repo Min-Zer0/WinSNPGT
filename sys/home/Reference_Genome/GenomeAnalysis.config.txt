@@ -1,46 +1,46 @@
 >> Maize
-> 1458_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz]
-** ID=GSTP003(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP003)
+> 1458_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP003/SNPGT/Maize_1458_Inbred.tar.gz]
+** ID=GSTP003(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP003)
 ** Species=Maize
 ** Sample type=Inbred Line
 ** Sample number=1458
 ** SNP number=4549828
 ** Traits number=3
 ** Paper=Genome Biol. 2021 May 10;22(1):148.| [The genetic mechanism of heterosis utilization in maize improvement.] (https://pubmed.ncbi.nlm.nih.gov/33971930/)
-> 1404_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz]
-** ID=GSTP004(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP004)
+> 1404_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP004/SNPGT/Maize_1404_Inbred.tar.gz]
+** ID=GSTP004(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP004)
 ** Species=Maize
 ** Sample type=Inbred Line
 ** Sample number=1404
 ** SNP number=11825030
 ** Traits number=23
 ** Paper=Genome Biol. 2020 Jan 24;21(1):20.| [CUBIC: an atlas of genetic architecture promises directed maize improvement.] (https://pubmed.ncbi.nlm.nih.gov/31980033/)
-> 350_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz]
-** ID=GSTP005(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP005)
+> 350_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP005/SNPGT/Maize_350_Inbred.tar.gz]
+** ID=GSTP005(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP005)
 ** Species=Maize
 ** Sample type=Inbred Line
 ** Sample number=350
 ** SNP number=25320665
 ** Traits number=13
 ** Paper=Nat Genet. 2020 Jun;52(6):565-571. | [Genome-wide selection and genetic improvement during modern maize breeding.] (https://pubmed.ncbi.nlm.nih.gov/32341525/)
-> 1604_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz]
-** ID=GSTP006(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP006)
+> 1604_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP006/SNPGT/Maize_1604_Inbred.tar.gz]
+** ID=GSTP006(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP006)
 ** Species=Maize
 ** Sample type=Inbred Line
 ** Sample number=1604
 ** SNP number=16552942
 ** Traits number=21
 ** Paper=Nat Plants. 2022 Jul;8(7):750-763.| [Genomic insights into historical improvement of heterotic groups during modern hybrid maize breeding.] (https://pubmed.ncbi.nlm.nih.gov/35851624/)
-> 8652_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz]
-** ID=GSTP001(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP001)
+> 8652_Hybrid [https://iagr.genomics.cn/static/gstool/data/GSTP001/SNPGT/Maize_8652_Hybrid.tar.gz]
+** ID=GSTP001(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP001)
 ** Species=Maize
 ** Sample type=Hybrid Line
 ** Sample number=8652
 ** SNP number=4549828
 ** Traits number=3
 ** Paper=Genome Biol. 2021 May 10;22(1):148.| [The genetic mechanism of heterosis utilization in maize improvement.] (https://pubmed.ncbi.nlm.nih.gov/33971930/)
-> 5820_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz]
-** ID=GSTP002(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP002)
+> 5820_Hybrid [https://iagr.genomics.cn/static/gstool/data/GSTP002/SNPGT/Maize_5820_Hybrid.tar.gz]
+** ID=GSTP002(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP002)
 ** Species=Maize
 ** Sample type=Hybrid Line
 ** Sample number=5820
@@ -49,24 +49,24 @@
 ** Paper=Genome Biol. 2022 Mar 15;23(1):80.| [Target-oriented prioritization: targeted selection strategy by integrating organismal and molecular traits through predictive analytics in breeding.] (https://pubmed.ncbi.nlm.nih.gov/35292095/)
 
 >> Rice
-> 705_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz]
-** ID=GSTP008(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP008)
+> 705_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP008/SNPGT/Rice_705_Inbred.tar.gz]
+** ID=GSTP008(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP008)
 ** Species=Rice
 ** Sample type=Inbred Line
 ** Sample number=705
 ** SNP number=7048490
 ** Traits number=51
 ** Paper=Sci China Life Sci. 2020 Nov;63(11):1688-1702.| [Analysis of genetic architecture and favorable allele usage of agronomic traits in a large collection of Chinese rice accessions.] (https://pubmed.ncbi.nlm.nih.gov/32303966/)
-> 378_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz]
-** ID=GSTP009(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP009)
+> 378_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP009/SNPGT/Rice_378_Inbred.tar.gz]
+** ID=GSTP009(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP009)
 ** Species=Rice
 ** Sample type=Inbred Line
 ** Sample number=378
 ** SNP number=5231433
 ** Traits number=33
 ** Paper=Nat Commun. 2011 Sep 13;2:467.| [Genome-wide association mapping reveals a rich genetic architecture of complex traits in Oryza sativa.] (https://pubmed.ncbi.nlm.nih.gov/21915109/)
-> 1495_Hybrid [http://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz]
-** ID=GSTP007(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP007)
+> 1495_Hybrid [https://iagr.genomics.cn/static/gstool/data/GSTP007/SNPGT/Rice_1495_Hybrid.tar.gz]
+** ID=GSTP007(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP007)
 ** Species=Rice
 ** Sample type=Hybrid Line
 ** Sample number=1495
@@ -75,8 +75,8 @@
 ** Paper=Nat Commun. 2015 Feb 5;6:6258.| [Genomic analysis of hybrid rice varieties reveals numerous superior alleles that contribute to heterosis.] (https://pubmed.ncbi.nlm.nih.gov/25651972/)
 
 >> Cotton
-> 1245_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz]
-** ID=GSTP010(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP010)
+> 1245_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP0010/SNPGT/Cotton_1245_Inbred.tar.gz]
+** ID=GSTP010(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP010)
 ** Species=Cotton
 ** Sample type=Inbred Line
 ** Sample number=1245
@@ -85,8 +85,8 @@
 ** Paper=Nat Genet. 2021 Jun;53(6):916-924.| [The genomic basis of geographic differentiation and fiber improvement in cultivated cotton.] (https://pubmed.ncbi.nlm.nih.gov/33859417/)
 
 >> Millet
-> 827_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz]
-** ID=GSTP011(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP011)
+> 827_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP0011/SNPGT/Millet_827_Inbred.tar.gz]
+** ID=GSTP011(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP011)
 ** Species=Millet
 ** Sample type=Inbred Line
 ** Sample number=827
@@ -95,8 +95,8 @@
 ** Paper=Nat Commun. 2022 Oct 7;13(1):5913.| [GWAS, MWAS and mGWAS provide insights into precision agriculture based on genotype-dependent microbial effects in foxtail millet.] (https://pubmed.ncbi.nlm.nih.gov/36207301/)
 					
 >> Chickpea
-> 2921_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz]
-** ID=GSTP012(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP012)
+> 2921_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP0012/SNPGT/Chickpea_2921_Inbred.tar.gz]
+** ID=GSTP012(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP012)
 ** Species=Chickpea
 ** Sample type=Inbred Line
 ** Sample number=2921
@@ -105,8 +105,8 @@
 ** Paper=Nature. 2021 Nov;599(7886):622-627.| [A chickpea genetic variation map based on the sequencing of 3,366 genomes.] (https://pubmed.ncbi.nlm.nih.gov/34759320/)
 
 >> Rapeseed
-> 991_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz]
-** ID=GSTP013(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP013)
+> 991_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP0013/SNPGT/Rapeseed_991_Inbred.tar.gz]
+** ID=GSTP013(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP013)
 ** Species=Rapeseed
 ** Sample type=Inbred Line
 ** Sample number=991
@@ -115,8 +115,8 @@
 ** Paper=Mol Plant. 2019 Jan 7;12(1):30-43.| [Whole-Genome Resequencing of a Worldwide Collection of Rapeseed Accessions Reveals the Genetic Basis of Ecotype Divergence.] (https://pubmed.ncbi.nlm.nih.gov/30472326/)
 
 >> Soybean
-> 2795_Inbred [http://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz]
-** ID=GSTP014(http://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP014)
+> 2795_Inbred [https://iagr.genomics.cn/static/gstool/data/GSTP0014/SNPGT/Soybean_2795_Inbred.tar.gz]
+** ID=GSTP014(https://iagr.genomics.cn/CropGS/#/PopulationBrowse?gstp_id=GSTP014)
 ** Species=Soybean
 ** Sample type=Inbred Line
 ** Sample number=2795
