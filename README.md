@@ -119,10 +119,6 @@ If there are some errors reported during the running of the program, please refe
 
 The above are some possible causes of errors, if there are any other problems, welcome to contact us.
 
-## 🔍 Change Log
-- [Version 1.0](https://github.com/JessieChen7/WinSNPGT) - First version released on June, 1st, 2023
-- [Version 2.0](https://github.com/Min-Zer0/WinSNPGT) - Second version released on August, 24th, 2023
-
 ## 👥 Contacts
 > - Jie Qiu (qiujie@shnu.edu.cn)  
 > - Min Zhu (zer0min@outlook.com)  
