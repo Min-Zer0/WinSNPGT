@@ -21,7 +21,7 @@ We have developed a phenotype prediction platform, **[CropGS-Hub](https://iagr.g
 The WinSNPGT toolkit was developed to ensure that the genotypes uploaded by users match those in the training set for modeling so that bias in the prediction results can be avoided. Users can run this program on the Windows system to realize the whole process from sequencing files to getting genotypes by simple operation, which is very friendly for people who have little experience in linux operation.
 
 ## 🌟 Installation
-1. **java8** download link：**[Download Link1](https://download.csdn.net/download/NBRWzm/88504993)**  |  **[Download Link2](https://figshare.com/articles/software/WinSNPGT_exe/24501355)**  | **[Download Link3](https://www.oracle.com/java/technologies/downloads/#java8-windows)**
+1. **java8** download link：**[Download Link1](https://www.oracle.com/java/technologies/downloads/#java8-windows)** | **[Download Link2](https://iagr.genomics.cn/static/gstool/media/snpgt/jdk-8u351-windows-x64.exe)** | **[Download Link3](https://figshare.com/articles/software/WinSNPGT_exe/24501355)** | **[Download Link4](https://download.csdn.net/download/NBRWzm/88504993)**
 	- Default installation
 2. **WinSNPGT** download link：[👉 Latest release package](https://github.com/Min-Zer0/WinSNPGT#-lastest-release-package)
 	- Double-click the exe installation package, select the installation path (**`Chinese characters are not allowed`**)
