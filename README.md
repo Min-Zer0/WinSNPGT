@@ -61,13 +61,11 @@ There are two ways to read raw reads files.
 	- Select the corresponding reads files and enter the sample name
 	- Click ***Add*** button to update the form if there are another samples to be genotyped
 	- Click ***Submit*** button after adding all samples to be genotyped and confirm the form is correct
- 
-   	`Project name and sample names are limited to numbers and upper- and lower-case letters (replace spaces with underscores); sample names may not be all numbers.`
+   	- `Project name and sample names are limited to numbers and upper- and lower-case letters (replace spaces with underscores); sample names may not be all numbers.`
 ![](https://img-blog.csdnimg.cn/9579afa14337467ab231f3e495f86c03.png)
-- ***reading excel table*** `It is recommended to avoid errors in manual selection when there are too many samples .`
+- ***reading excel table*** `It is recommended to avoid errors in manual selection when there are too many samples.`
 	- Fill in the file **Sample.table.xls** under the path **./Input_Fastq** in advance
-   
-   	`Project name and sample names are limited to numbers and upper- and lower-case letters (replace spaces with underscores); sample names may not be all numbers.`
+   	- `Project name and sample names are limited to numbers and upper- and lower-case letters (replace spaces with underscores); sample names may not be all numbers.`
 	![](https://img-blog.csdnimg.cn/6e5499b11d124c60b435a21ec468b026.png)
 
 ### Step 4: Select species and dataset  
