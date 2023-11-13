@@ -1,12 +1,12 @@
 # ___WinSNPGT: Genotyping of specified SNP sites on Windows system___
 ## 👉 Latest release package
 - Installation package
-	- Installation package on CSDN: **[WinSNPGT.exe](https://download.csdn.net/download/NBRWzm/88504982)**
-	- Installation package on Figshare: **[WinSNPGT.exe](https://figshare.com/articles/software/WinSNPGT_exe/24501355)**
-	- Installation package on Github: **[WinSNPGT.exe](https://github.com/Min-Zer0/WinSNPGT/raw/install.package/WinSNPGT.exe?download=)**
+	- Github: **[WinSNPGT.exe](https://github.com/Min-Zer0/WinSNPGT/raw/install.package/WinSNPGT.exe?download=)**
+  	- Figshare: **[WinSNPGT.exe](https://figshare.com/articles/software/WinSNPGT_exe/24501355)**
+  	- CSDN: **[WinSNPGT.exe](https://download.csdn.net/download/NBRWzm/88504982)**
 - repository
-	- Github repository: **[Min-Zer0/WinSNPGT](https://github.com/Min-Zer0/WinSNPGT)**
-	- Gitee repository: **[Min-Zer0/WinSNPGT](https://gitee.com/Min-Zer0/WinSNPGT)**
+	- Github: **[Min-Zer0/WinSNPGT](https://github.com/Min-Zer0/WinSNPGT)**
+	- Gitee: **[Min-Zer0/WinSNPGT](https://gitee.com/Min-Zer0/WinSNPGT)**
 
 ## 💡 General Introduction
 The rapid development of sequencing technology and dramatic drop in the cost have led to the generation of massive amounts of data. However, most of the raw data are analyzed on linux systems, and the process of generating variant loci information from sequencing data is a challenge for researchers unfamiliar with linux systems.
@@ -25,11 +25,11 @@ The WinSNPGT toolkit was developed to ensure that the genotypes uploaded by user
 	- Default installation
 2. **WinSNPGT** download link：[👉 Latest release package](https://github.com/Min-Zer0/WinSNPGT#-lastest-release-package)
 	- Double-click the exe installation package, select the installation path (**`Chinese characters are not allowed`**)
-	![在这里插入图片描述](https://img-blog.csdnimg.cn/25406fefbc494ceea01d41bdc2322c4b.png)
+	![](https://img-blog.csdnimg.cn/25406fefbc494ceea01d41bdc2322c4b.png)
 	- After decompression is completed, the following prompt appears, indicating that the installation is successful:
-	![在这里插入图片描述](https://img-blog.csdnimg.cn/9566956c57834114bb57df58fae70580.png)
+	![](https://img-blog.csdnimg.cn/9566956c57834114bb57df58fae70580.png)
 	- Double-click to enter the installation path **WinSNPGT/**  
-	![在这里插入图片描述](https://img-blog.csdnimg.cn/109154b7077447b4ac89c8cec7d06186.png)
+	![](https://img-blog.csdnimg.cn/109154b7077447b4ac89c8cec7d06186.png)
 
 	**WinSNPGT**：Startup icon (a shortcut will also generate on the desktop)  
 	***Input_Fastq/***：Paired-end sequencing files should be moved as input into this folder  
@@ -44,14 +44,14 @@ The species of the example-data files is *Oryza sativa*, you can select the rice
 ## 🌟 Usage
 ### Step 1：Move raw sequencing data
 - Move your raw sequencing data **`(*.fastq.gz)`** or **`(*.fastq)`** to the path: **./Input_Fastq**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ff1b0ca7e07644f19d3e46b559ba996e.png)
+![](https://img-blog.csdnimg.cn/ff1b0ca7e07644f19d3e46b559ba996e.png)
 
 ### Step 2：Start the WinSNPGT program
 - **Double-click to run the program and a web pop-up will appear in the default browser**
 - **There will also be a window running as a background program**
 	- `Do not close the background program window`
 	- `It should be closed after the program is finished running or when restarting the program, you need to close this window`  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/dd4af84ebed649e6acf476523a212f47.png)
+![](https://img-blog.csdnimg.cn/dd4af84ebed649e6acf476523a212f47.png)
 
 ### Step 3: Creat Project
 There are two ways to read raw reads files.
@@ -61,21 +61,23 @@ There are two ways to read raw reads files.
 	- Select the corresponding reads files and enter the sample name
 	- Click ***Add*** button to update the form if there are another samples to be genotyped
 	- Click ***Submit*** button after adding all samples to be genotyped and confirm the form is correct
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9579afa14337467ab231f3e495f86c03.png)
+   	`Project name and sample names are limited to numbers and upper- and lower-case letters (replace spaces with underscores); sample names may not be all numbers.`
+![](https://img-blog.csdnimg.cn/9579afa14337467ab231f3e495f86c03.png)
 - ***reading excel table*** `It is recommended to avoid errors in manual selection when there are too many samples .`
 	- Fill in the file **Sample.table.xls** under the path **./Input_Fastq** in advance
-	![在这里插入图片描述](https://img-blog.csdnimg.cn/6e5499b11d124c60b435a21ec468b026.png)
+   	`Project name and sample names are limited to numbers and upper- and lower-case letters (replace spaces with underscores); sample names may not be all numbers.`
+	![](https://img-blog.csdnimg.cn/6e5499b11d124c60b435a21ec468b026.png)
 
 ### Step 4: Select species and dataset  
  - Select the species of your samples to be genotyped
  - Select the dataset corresponding to the model to be fitted
  - Datasets available：**[CropGS-Hub Dataset](https://iagr.genomics.cn/CropGS/#/Datasets)** 	
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/0ac6e5435d6c4b3aa0fc5ea5908cf442.png)
+ ![](https://img-blog.csdnimg.cn/0ac6e5435d6c4b3aa0fc5ea5908cf442.png)
 ### Step 5: Select the number of threads   
 -  The default number of threads is 4
-	![在这里插入图片描述](https://img-blog.csdnimg.cn/d810006c1367451184f80f9784dad8cb.png)
+	![](https://img-blog.csdnimg.cn/d810006c1367451184f80f9784dad8cb.png)
 ### Step 6：Run the program
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9d6334208b014eeda8749b7d037c36bc.png)
+![](https://img-blog.csdnimg.cn/9d6334208b014eeda8749b7d037c36bc.png)
 
 ### Others: Offline download of species datasets 
 - During normal operation, the program will automatically download the reference genome before entering the genotyping analysis process.
@@ -109,9 +111,9 @@ If there are some errors reported during the running of the program, please refe
 - The **`background program is not allowed to be closed`** until you get your results.
 - If you fill in the wrong information on the web page, you can **`refresh and refill the interface`** before running, and there is no need to restart the program or repeat moving files steps.
 -  **`Chinese characters are not allowed`** to appear in **`path where winSNPGT is installed`**. Otherwise, the following error may occur:
-![在这里插入图片描述](https://img-blog.csdnimg.cn/28738b6a2b2640738396912d250d10d1.png)
+![](https://img-blog.csdnimg.cn/28738b6a2b2640738396912d250d10d1.png)
 - If you chose the way to read excel table, you must **`save and close the table`** after filling it, which means it cannot be kept open. Otherwise, the following error may occur:
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7c4df63e49c34a88b836e953156e25e4.png)
+![](https://img-blog.csdnimg.cn/7c4df63e49c34a88b836e953156e25e4.png)
 
 The above are some possible causes of errors, if there are any other problems, welcome to contact us.
 
